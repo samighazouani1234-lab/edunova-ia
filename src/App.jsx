@@ -353,6 +353,7 @@ export default function App() {
                       <p className="text-sm text-white/75 mt-2">{course.answer}</p>
                     </motion.div>
                   )}
+                  </div>
                 </CardContent>
               </Card>
             </div>
