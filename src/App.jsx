@@ -47,89 +47,137 @@ const subjects = [
 const courseDatabase = {
   Primaire: {
     Mathématiques: {
-      title: "Comprendre les fractions simplement",
-      lesson: "Une fraction représente une partie d’un tout. Par exemple, 1/2 signifie que l’on partage quelque chose en 2 parts égales et que l’on en prend 1. Pour comparer des fractions, on regarde le nombre de parts et leur taille.",
+      title: "Fractions, calculs et problèmes",
+      lesson: "Dans ce cours, l’élève apprend à comprendre les fractions, poser des additions et résoudre des problèmes simples. Une fraction représente une partie d’un tout : 3/4 signifie que l’on prend 3 parts sur 4 parts égales.",
+      objectives: ["Lire une fraction simple", "Comparer deux nombres", "Résoudre un problème court", "Expliquer son raisonnement"],
+      method: ["Lire attentivement l’énoncé", "Repérer les nombres importants", "Choisir l’opération", "Écrire une phrase-réponse"],
+      example: "Exemple : si une pizza est coupée en 4 parts et que Lina mange 3 parts, elle a mangé 3/4 de la pizza.",
       exercise: "Colorie mentalement 3 parts sur 4. Quelle fraction obtiens-tu ?",
       answer: "3/4",
+      quiz: ["Que signifie le chiffre du bas dans une fraction ?", "Quelle fraction représente une moitié ?", "Dans 2/5, combien de parts sont prises ?"],
       evaluation: "L’élève doit savoir lire, représenter et comparer des fractions simples."
     },
     Français: {
-      title: "Identifier le sujet et le verbe",
-      lesson: "Dans une phrase, le sujet indique qui fait l’action. Le verbe indique l’action ou l’état. Dans ‘Le chat dort’, ‘Le chat’ est le sujet et ‘dort’ est le verbe.",
+      title: "Grammaire, lecture et expression",
+      lesson: "L’élève apprend à reconnaître le sujet, le verbe, les noms, les adjectifs et à écrire des phrases correctes. Dans une phrase, le sujet indique qui fait l’action et le verbe indique l’action.",
+      objectives: ["Identifier le sujet", "Trouver le verbe", "Comprendre un texte court", "Écrire une phrase complète"],
+      method: ["Lire la phrase", "Chercher l’action", "Demander qui fait l’action", "Relire pour vérifier le sens"],
+      example: "Dans ‘La petite fille chante’, le sujet est ‘La petite fille’ et le verbe est ‘chante’.",
       exercise: "Dans la phrase ‘La petite fille chante’, trouve le sujet et le verbe.",
       answer: "Sujet : La petite fille. Verbe : chante.",
+      quiz: ["Quel mot indique l’action ?", "Comment trouve-t-on le sujet ?", "Un adjectif sert à quoi ?"],
       evaluation: "L’élève doit repérer les éléments principaux d’une phrase simple."
     },
     Anglais: {
-      title: "Se présenter en anglais",
-      lesson: "Pour se présenter, on peut dire : ‘Hello, my name is…’ puis ajouter son âge avec ‘I am ... years old’. Ces phrases permettent de commencer une conversation simple.",
+      title: "Se présenter et parler de soi",
+      lesson: "L’élève apprend les phrases de base pour se présenter : Hello, my name is…, I am … years old, I like… Ces structures permettent de commencer une conversation simple.",
+      objectives: ["Dire son nom", "Dire son âge", "Utiliser I like", "Comprendre une question simple"],
+      method: ["Apprendre la phrase modèle", "Changer le prénom", "Répéter à voix haute", "Répondre en phrase complète"],
+      example: "Hello, my name is Lina. I am ten years old. I like football.",
       exercise: "Traduis : Bonjour, je m’appelle Lina.",
       answer: "Hello, my name is Lina.",
+      quiz: ["Comment dit-on bonjour ?", "Comment dit-on je m’appelle ?", "Que signifie I like ?"],
       evaluation: "L’élève doit savoir utiliser une formule de présentation courte."
     },
     Sciences: {
-      title: "Les états de l’eau",
-      lesson: "L’eau peut être liquide, solide ou gazeuse. Quand elle gèle, elle devient de la glace. Quand elle chauffe beaucoup, elle devient de la vapeur.",
+      title: "L’eau, la matière et le vivant",
+      lesson: "L’élève découvre les états de l’eau, les objets, les plantes et les animaux. L’eau peut être liquide, solide ou gazeuse selon la température.",
+      objectives: ["Distinguer solide, liquide et gaz", "Observer une expérience", "Utiliser le bon vocabulaire", "Classer des exemples"],
+      method: ["Observer", "Nommer", "Comparer", "Conclure"],
+      example: "Un glaçon est de l’eau solide. Quand il fond, il devient liquide.",
       exercise: "Quel est l’état de l’eau dans un glaçon ?",
       answer: "Solide.",
+      quiz: ["Quels sont les trois états de l’eau ?", "Que devient l’eau quand elle chauffe beaucoup ?", "Que devient la glace quand elle fond ?"],
       evaluation: "L’élève doit distinguer solide, liquide et gaz à partir d’exemples."
     },
     "Histoire-Géo": {
-      title: "Lire une carte simple",
-      lesson: "Une carte représente un lieu vu de dessus. Elle peut montrer des villes, des routes, des rivières ou des montagnes. La légende aide à comprendre les symboles.",
+      title: "Se repérer dans le temps et l’espace",
+      lesson: "L’élève apprend à lire une carte, utiliser une légende, situer un lieu et comprendre une frise chronologique simple.",
+      objectives: ["Lire une carte", "Comprendre une légende", "Situer un lieu", "Utiliser avant/après"],
+      method: ["Lire le titre", "Observer les symboles", "Utiliser la légende", "Répondre avec précision"],
+      example: "Sur une carte, un trait bleu peut représenter une rivière si la légende l’indique.",
       exercise: "À quoi sert la légende d’une carte ?",
       answer: "Elle explique les symboles de la carte.",
+      quiz: ["À quoi sert une carte ?", "Où trouve-t-on les symboles ?", "Que veut dire se repérer ?"],
       evaluation: "L’élève doit comprendre les éléments de base d’une carte."
     },
     "Culture générale": {
-      title: "Découvrir les instruments",
-      lesson: "Les instruments de musique produisent des sons de différentes façons : en soufflant, en frappant ou en pinçant des cordes.",
+      title: "Arts, musique et découverte du monde",
+      lesson: "L’élève découvre les instruments, les métiers, les pays, les monuments et les grandes inventions avec des exemples simples.",
+      objectives: ["Identifier un instrument", "Classer des objets", "Découvrir des pays", "Développer la curiosité"],
+      method: ["Observer", "Comparer", "Nommer", "Mémoriser par exemple"],
+      example: "La guitare produit du son grâce à ses cordes : c’est un instrument à cordes.",
       exercise: "La guitare est-elle un instrument à cordes ou à vent ?",
       answer: "Un instrument à cordes.",
+      quiz: ["Le piano est-il un instrument ?", "Comment produit-on un son avec une flûte ?", "Pourquoi apprend-on la culture générale ?"],
       evaluation: "L’élève doit classer quelques instruments simples."
     }
   },
   Collège: {
     Mathématiques: {
-      title: "Résoudre une équation du premier degré",
-      lesson: "Résoudre une équation, c’est trouver la valeur de l’inconnue. Pour garder l’égalité vraie, on effectue la même opération des deux côtés. Exemple : x + 5 = 12, donc x = 7.",
+      title: "Équations, proportionnalité et raisonnement",
+      lesson: "L’élève apprend à résoudre une équation du premier degré, reconnaître une situation de proportionnalité et justifier ses calculs. Résoudre une équation consiste à trouver la valeur de l’inconnue.",
+      objectives: ["Isoler une inconnue", "Utiliser les opérations inverses", "Vérifier une solution", "Résoudre un problème"],
+      method: ["Repérer l’inconnue", "Effectuer la même opération des deux côtés", "Calculer", "Remplacer pour vérifier"],
+      example: "x + 5 = 12. On enlève 5 des deux côtés : x = 7.",
       exercise: "Résous : x + 8 = 15.",
       answer: "x = 7",
+      quiz: ["Que signifie résoudre une équation ?", "Pourquoi fait-on la même opération des deux côtés ?", "Comment vérifier une solution ?"],
       evaluation: "L’élève doit isoler l’inconnue par opérations inverses."
     },
     Français: {
-      title: "Analyser un texte narratif",
-      lesson: "Un récit comporte souvent un narrateur, des personnages, un cadre, une situation initiale, un élément perturbateur et une résolution. Identifier ces éléments aide à comprendre le texte.",
+      title: "Analyse de texte et expression écrite",
+      lesson: "L’élève apprend à analyser un récit, identifier le narrateur, les personnages, le cadre, la situation initiale, l’élément perturbateur et la résolution.",
+      objectives: ["Identifier le narrateur", "Repérer la structure du récit", "Justifier avec le texte", "Rédiger une réponse organisée"],
+      method: ["Lire le texte", "Surligner les indices", "Nommer les étapes", "Rédiger avec une citation courte"],
+      example: "Dans un conte, l’élément perturbateur est souvent l’événement qui change la situation de départ.",
       exercise: "Dans un conte, quel événement lance souvent l’histoire ?",
       answer: "L’élément perturbateur.",
+      quiz: ["Qu’est-ce qu’un narrateur ?", "À quoi sert le cadre ?", "Comment justifier une réponse ?"],
       evaluation: "L’élève doit repérer la structure d’un récit."
     },
     Anglais: {
-      title: "Utiliser le prétérit simple",
-      lesson: "Le prétérit sert à parler d’une action passée et terminée. Avec les verbes réguliers, on ajoute souvent -ed : play devient played. Les verbes irréguliers doivent être appris.",
+      title: "Passé simple, vocabulaire et compréhension",
+      lesson: "L’élève apprend à parler d’actions passées avec le prétérit. Les verbes réguliers prennent souvent -ed, tandis que les verbes irréguliers doivent être mémorisés.",
+      objectives: ["Former le prétérit", "Distinguer régulier et irrégulier", "Comprendre une phrase au passé", "Écrire une phrase simple"],
+      method: ["Identifier le verbe", "Vérifier s’il est régulier", "Ajouter -ed ou utiliser la forme irrégulière", "Relire la phrase"],
+      example: "I play football devient I played football.",
       exercise: "Mets au passé : I play football.",
       answer: "I played football.",
+      quiz: ["À quoi sert le prétérit ?", "Comment transforme-t-on play ?", "Pourquoi apprendre les verbes irréguliers ?"],
       evaluation: "L’élève doit transformer une phrase simple au passé."
     },
     Sciences: {
-      title: "Comprendre la cellule",
-      lesson: "La cellule est l’unité de base des êtres vivants. Elle contient différents éléments, comme la membrane, le cytoplasme et parfois un noyau qui contient l’information génétique.",
+      title: "Cellule, énergie et démarche scientifique",
+      lesson: "L’élève découvre la cellule, les organes, l’énergie et la méthode scientifique. La cellule est l’unité de base des êtres vivants.",
+      objectives: ["Décrire une cellule", "Comprendre une expérience", "Identifier une hypothèse", "Utiliser le vocabulaire scientifique"],
+      method: ["Observer", "Formuler une hypothèse", "Tester", "Conclure"],
+      example: "La membrane cellulaire délimite la cellule et la protège.",
       exercise: "Quel élément protège et délimite la cellule ?",
       answer: "La membrane cellulaire.",
+      quiz: ["Qu’est-ce qu’une cellule ?", "À quoi sert le noyau ?", "Qu’est-ce qu’une hypothèse ?"],
       evaluation: "L’élève doit connaître les principales parties d’une cellule."
     },
     "Histoire-Géo": {
-      title: "La Révolution française",
-      lesson: "La Révolution française commence en 1789. Elle transforme profondément la société française, remet en cause la monarchie absolue et affirme de nouveaux principes comme l’égalité devant la loi.",
+      title: "Révolution française, cartes et sociétés",
+      lesson: "L’élève étudie les grands repères historiques et géographiques. La Révolution française commence en 1789 et transforme la société française.",
+      objectives: ["Retenir des repères", "Expliquer un changement historique", "Lire un document", "Construire une réponse argumentée"],
+      method: ["Identifier la date", "Comprendre les causes", "Repérer les conséquences", "Rédiger clairement"],
+      example: "1789 marque le début de la Révolution française et la remise en cause de la monarchie absolue.",
       exercise: "En quelle année commence la Révolution française ?",
       answer: "1789.",
+      quiz: ["Que se passe-t-il en 1789 ?", "Qu’est-ce qu’une monarchie absolue ?", "Pourquoi la Révolution est-elle importante ?"],
       evaluation: "L’élève doit retenir les repères majeurs et expliquer les changements."
     },
     "Culture générale": {
-      title: "Comprendre les médias",
-      lesson: "Un média transmet une information : journal, télévision, radio, site internet ou réseau social. Il faut vérifier la source, la date et comparer plusieurs informations.",
+      title: "Médias, esprit critique et monde actuel",
+      lesson: "L’élève apprend à comprendre les médias, vérifier une source, comparer des informations et développer son esprit critique.",
+      objectives: ["Identifier un média", "Vérifier une source", "Comparer deux informations", "Repérer une information douteuse"],
+      method: ["Regarder la source", "Vérifier la date", "Comparer avec d’autres sites", "Chercher l’auteur"],
+      example: "Une information fiable indique souvent sa source, sa date et son auteur.",
       exercise: "Pourquoi faut-il vérifier la source d’une information ?",
       answer: "Pour savoir si elle est fiable.",
+      quiz: ["Qu’est-ce qu’un média ?", "Pourquoi comparer plusieurs sources ?", "Que faire face à une information douteuse ?"],
       evaluation: "L’élève doit adopter une attitude critique face aux informations."
     }
   }
@@ -314,6 +362,38 @@ export default function App() {
                     </div>
                   </div>
                   <p className="text-slate-700 leading-relaxed text-lg">{course.lesson}</p>
+
+                  <div className="mt-6 grid md:grid-cols-2 gap-4">
+                    <div className="rounded-3xl bg-slate-100 p-5">
+                      <p className="font-bold mb-3">Objectifs du cours</p>
+                      <ul className="space-y-2 text-sm text-slate-600">
+                        {course.objectives.map((item) => <li key={item}>✅ {item}</li>)}
+                      </ul>
+                    </div>
+                    <div className="rounded-3xl bg-slate-100 p-5">
+                      <p className="font-bold mb-3">Méthode</p>
+                      <ol className="space-y-2 text-sm text-slate-600">
+                        {course.method.map((item, index) => <li key={item}>{index + 1}. {item}</li>)}
+                      </ol>
+                    </div>
+                  </div>
+
+                  <div className="mt-6 rounded-3xl bg-indigo-50 border border-indigo-100 p-5">
+                    <p className="font-bold mb-2">Exemple guidé</p>
+                    <p className="text-slate-600 text-sm">{course.example}</p>
+                  </div>
+
+                  <div className="mt-6 rounded-3xl bg-slate-100 p-5">
+                    <p className="font-bold mb-3">Mini-quiz du cours</p>
+                    <div className="grid md:grid-cols-3 gap-3">
+                      {course.quiz.map((item) => (
+                        <div key={item} className="rounded-2xl bg-white p-4 text-sm text-slate-600 border border-slate-200">
+                          {item}
+                        </div>
+                      ))}
+                    </div>
+                  </div>
+
                   <div className="mt-6 rounded-3xl bg-slate-100 p-5">
                     <p className="font-bold mb-2 flex items-center gap-2"><Sparkles className="h-4 w-4" /> Adaptation IA</p>
                     <p className="text-slate-600 text-sm">Le contenu s’ajuste au niveau choisi, au score de l’élève et à ses erreurs fréquentes.</p>
