@@ -18,11 +18,40 @@ const subjects = [
   { name: "Culture générale", icon: "🎵", color: "from-fuchsia-500 to-purple-500" },
 ];
 
+const educationalVideos = {
+  "Nombres et calculs": "https://www.youtube.com/embed/GPZhUzgT2dM",
+  "Fractions et décimaux": "https://www.youtube.com/embed/Ryy9nmQxeY0",
+  "Géométrie et mesures": "https://www.youtube.com/embed/bX7Bt3Cm3xc",
+  "Grammaire": "https://www.youtube.com/embed/IUxs-B3wTuI",
+  "Lecture compréhension": "https://www.youtube.com/embed/Sdg0pBmFzFY",
+  "Se présenter": "https://www.youtube.com/embed/uYHX5ZORxy4",
+  "Vocabulaire de base": "https://www.youtube.com/embed/mpW8xJ3Jaxs",
+  "Les états de l’eau": "https://www.youtube.com/embed/fW8bwgRDxSY",
+  "Le vivant": "https://www.youtube.com/embed/CHnqX-rVorg",
+  "Lire une carte": "https://www.youtube.com/embed/kDjRugurkZY",
+  "Se repérer dans le temps": "https://www.youtube.com/embed/UNaa4XYkia8",
+  "Arts et musique": "https://www.youtube.com/embed/OaZ4D-hvPHc",
+  "Découverte du monde": "https://www.youtube.com/embed/h_YkcmbRR4Q",
+  "Calcul numérique": "https://www.youtube.com/embed/CnxrBYxzur8",
+  "Équations": "https://www.youtube.com/embed/N4eWBCGQOLI",
+  "Proportionnalité": "https://www.youtube.com/embed/xZGxe8eE8-c",
+  "Analyse de texte": "https://www.youtube.com/embed/CqTenJ0Ph5E",
+  "Expression écrite": "https://www.youtube.com/embed/HmHVd3QVPi8",
+  "Prétérit": "https://www.youtube.com/embed/ZNRNm-9FBAE",
+  "Compréhension écrite": "https://www.youtube.com/embed/UMDB_dd1OsU",
+  "Cellule et vivant": "https://www.youtube.com/embed/iUf3d6HQ3D0",
+  "Démarche scientifique": "https://www.youtube.com/embed/zNGunL4QcpM",
+  "Révolution française": "https://www.youtube.com/embed/7j9QV_BKtAs",
+  "Document géographique": "https://www.youtube.com/embed/8_yx4oU0de0",
+  "Médias et esprit critique": "https://www.youtube.com/embed/mWhQnRLq-4s",
+  "Monde actuel": "https://www.youtube.com/embed/skwiH2RNgDw",
+};
+
 function makeChapter(title, lesson, objectives, exercises, details = {}) {
   return {
     title,
     lesson,
-    video: details.video || "https://www.youtube.com/embed/dQw4w9WgXcQ",
+    video: details.video || educationalVideos[title] || "",
     objectives,
     method: ["Lire toute la consigne", "Repérer les informations utiles", "Appliquer la méthode", "Répondre clairement", "Vérifier la réponse"],
     details: {
@@ -258,19 +287,21 @@ function CourseSelector({ level, setLevel, subject, setSubject, subjects, chapte
 }
 
 function CoursePage({ level, subject, selectedSubject, chapter, setPage, startExercise, completeChapter }) {
-  return <main className="max-w-6xl mx-auto px-6 py-12"><Button onClick={() => { setPage("home"); setTimeout(() => document.getElementById("cours")?.scrollIntoView({ behavior: "smooth" }), 50); }} className="mb-6 rounded-2xl bg-white/10 text-white px-5 py-3 border border-white/10">← Retour aux chapitres</Button><div className="rounded-[2rem] bg-white text-slate-950 p-8 md:p-12 shadow-2xl"><div className="flex items-center gap-4 mb-8"><div className={`h-14 w-14 rounded-2xl bg-gradient-to-br ${selectedSubject.color} flex items-center justify-center text-white text-2xl`}>{selectedSubject.icon}</div><div><p className="text-slate-500">{level} · {subject}</p><h1 className="text-4xl font-black">{chapter.title}</h1></div></div><p className="text-xl text-slate-700 leading-relaxed">{chapter.lesson}</p><div className="mt-8 rounded-3xl overflow-hidden bg-slate-950 shadow-2xl">
-  <div className="p-5 text-white">
-    <p className="text-indigo-300 font-semibold">Vidéo du cours</p>
-    <h2 className="text-2xl font-black mt-1">Regarder l’explication avant les exercices</h2>
+  return <main className="max-w-6xl mx-auto px-6 py-12"><Button onClick={() => { setPage("home"); setTimeout(() => document.getElementById("cours")?.scrollIntoView({ behavior: "smooth" }), 50); }} className="mb-6 rounded-2xl bg-white/10 text-white px-5 py-3 border border-white/10">← Retour aux chapitres</Button><div className="rounded-[2rem] bg-white text-slate-950 p-8 md:p-12 shadow-2xl"><div className="flex items-center gap-4 mb-8"><div className={`h-14 w-14 rounded-2xl bg-gradient-to-br ${selectedSubject.color} flex items-center justify-center text-white text-2xl`}>{selectedSubject.icon}</div><div><p className="text-slate-500">{level} · {subject}</p><h1 className="text-4xl font-black">{chapter.title}</h1></div></div><p className="text-xl text-slate-700 leading-relaxed">{chapter.lesson}</p>{chapter.video && (
+  <div className="mt-8 rounded-3xl overflow-hidden bg-slate-950 shadow-2xl">
+    <div className="p-5 text-white">
+      <p className="text-indigo-300 font-semibold">Vidéo du cours</p>
+      <h2 className="text-2xl font-black mt-1">Regarder l’explication avant les exercices</h2>
+    </div>
+    <iframe
+      className="w-full aspect-video"
+      src={chapter.video}
+      title={`Vidéo ${chapter.title}`}
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen
+    />
   </div>
-  <iframe
-    className="w-full aspect-video"
-    src={chapter.video}
-    title={`Vidéo ${chapter.title}`}
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowFullScreen
-  />
-</div>
+)}
 
 <div className="mt-8 grid md:grid-cols-2 gap-6"><div className="rounded-3xl bg-slate-100 p-6"><h2 className="text-2xl font-black mb-4">Objectifs</h2><ul className="space-y-2 text-slate-700">{chapter.objectives.map((o) => <li key={o}>✅ {o}</li>)}</ul></div><div className="rounded-3xl bg-slate-100 p-6"><h2 className="text-2xl font-black mb-4">Méthode</h2><ol className="space-y-2 text-slate-700">{chapter.method.map((m, i) => <li key={m}>{i + 1}. {m}</li>)}</ol></div></div><div className="mt-8 rounded-3xl bg-indigo-50 border border-indigo-100 p-6"><h2 className="text-2xl font-black mb-3">Leçon détaillée</h2><p className="text-slate-700 leading-relaxed text-lg">{chapter.details.definition}</p></div><div className="mt-6 rounded-3xl bg-emerald-50 border border-emerald-100 p-6"><h2 className="text-2xl font-black mb-3">Exemple guidé</h2><p className="text-slate-700 leading-relaxed text-lg">{chapter.details.example}</p></div><div className="mt-6 grid md:grid-cols-2 gap-6"><div className="rounded-3xl bg-rose-50 border border-rose-100 p-6"><h2 className="text-2xl font-black mb-4">Erreurs fréquentes</h2><ul className="space-y-2 text-slate-700">{chapter.details.mistakes.map((m) => <li key={m}>⚠️ {m}</li>)}</ul></div><div className="rounded-3xl bg-slate-100 p-6"><h2 className="text-2xl font-black mb-4">Résumé à retenir</h2><p className="text-slate-700 leading-relaxed">{chapter.details.summary}</p><p className="mt-4 text-indigo-700 font-bold">Conseil IA : commence par 2 exercices simples, puis passe au niveau supérieur.</p></div></div><div className="mt-8 flex flex-col sm:flex-row gap-4"><Button onClick={startExercise} className="rounded-2xl px-8 py-4 bg-indigo-600 text-white hover:bg-indigo-500">Commencer les exercices plein écran</Button><Button onClick={completeChapter} className="rounded-2xl px-8 py-4 bg-slate-950 text-white hover:bg-slate-800">Marquer le chapitre terminé</Button></div></div></main>;
 }
