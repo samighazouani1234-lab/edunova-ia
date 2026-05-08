@@ -134,7 +134,56 @@ function chapter(title, lesson, objectives, exercises) {
     lesson,
     objectives,
     method: ["Lire la consigne", "Repérer les informations utiles", "Répondre clairement", "Vérifier la réponse"],
+    details: getLessonDetails(title),
     exercises: exercises.map(([question, answer]) => ({ question, answer })),
+  };
+}
+
+function getLessonDetails(title) {
+  const lessons = {
+    "Nombres et calculs": {
+      definition: "Les nombres servent à compter, mesurer, comparer et résoudre des situations de la vie quotidienne. Les opérations permettent de transformer ces nombres : additionner pour regrouper, soustraire pour enlever, multiplier pour répéter, diviser pour partager.",
+      example: "Exemple guidé : pour calculer 245 + 138, on additionne les unités : 5 + 8 = 13, on écrit 3 et on retient 1. Puis les dizaines : 4 + 3 + 1 = 8. Puis les centaines : 2 + 1 = 3. Résultat : 383.",
+      mistakes: ["Oublier une retenue", "Confondre addition et multiplication", "Ne pas lire toute la question", "Répondre sans phrase finale"],
+      summary: "Pour réussir, il faut lire l’énoncé, choisir la bonne opération, poser le calcul proprement et vérifier le résultat."
+    },
+    "Fractions et décimaux": {
+      definition: "Une fraction représente une partie d’un tout partagé en parts égales. Le nombre du haut indique les parts prises, le nombre du bas indique le nombre total de parts.",
+      example: "Exemple guidé : dans 3/4, le 4 signifie que l’objet est partagé en 4 parts égales. Le 3 signifie que l’on prend 3 parts. On lit : trois quarts.",
+      mistakes: ["Croire que le nombre du haut est toujours le plus grand", "Comparer les fractions sans regarder le dénominateur", "Oublier que les parts doivent être égales", "Confondre 1/2 et 2/1"],
+      summary: "Une fraction est une manière d’écrire une quantité. Elle devient plus facile à comprendre avec un dessin ou un partage."
+    },
+    "Géométrie et mesures": {
+      definition: "La géométrie étudie les formes, les longueurs, les angles et les positions. Les mesures permettent de comparer des grandeurs : longueur, masse, durée ou aire.",
+      example: "Exemple guidé : un rectangle possède 4 côtés et 4 angles droits. Ses côtés opposés sont de même longueur. Pour calculer son périmètre, on additionne les longueurs de tous les côtés.",
+      mistakes: ["Confondre carré et rectangle", "Oublier l’unité de mesure", "Mesurer sans aligner la règle", "Confondre périmètre et aire"],
+      summary: "Pour réussir en géométrie, il faut observer la figure, nommer ses propriétés et utiliser les bonnes unités."
+    },
+    "Calcul numérique": {
+      definition: "Le calcul numérique regroupe les opérations avec nombres entiers, décimaux, relatifs, fractions et puissances. Il faut respecter les priorités opératoires.",
+      example: "Exemple guidé : dans 3 + 2 × 5, on commence par la multiplication : 2 × 5 = 10. Puis on ajoute 3. Résultat : 13.",
+      mistakes: ["Calculer de gauche à droite sans priorité", "Oublier les parenthèses", "Mal gérer les nombres négatifs", "Confondre carré et double"],
+      summary: "La règle essentielle : parenthèses d’abord, puis multiplications/divisions, puis additions/soustractions."
+    },
+    "Équations": {
+      definition: "Une équation est une égalité avec une inconnue. Résoudre une équation, c’est trouver la valeur de cette inconnue.",
+      example: "Exemple guidé : x + 8 = 15. Pour isoler x, on enlève 8 des deux côtés. Donc x = 15 - 8 = 7.",
+      mistakes: ["Faire une opération d’un seul côté", "Oublier de vérifier la solution", "Confondre x + 8 et 8x", "Changer le signe au mauvais moment"],
+      summary: "Pour résoudre une équation, on garde l’égalité équilibrée en faisant la même opération des deux côtés."
+    },
+    "Proportionnalité": {
+      definition: "Deux grandeurs sont proportionnelles quand on passe de l’une à l’autre en multipliant toujours par le même nombre.",
+      example: "Exemple guidé : si 2 cahiers coûtent 6 €, alors 4 cahiers coûtent deux fois plus : 12 €. Le prix est proportionnel au nombre de cahiers.",
+      mistakes: ["Additionner au lieu de multiplier", "Ne pas vérifier le coefficient", "Confondre pourcentage et quantité", "Oublier les unités"],
+      summary: "Cherche le coefficient multiplicateur ou passe par l’unité pour résoudre un problème de proportionnalité."
+    }
+  };
+
+  return lessons[title] || {
+    definition: "Ce chapitre introduit les notions importantes à connaître, avec une méthode simple et des exercices progressifs.",
+    example: "Exemple guidé : lis la consigne, repère les mots importants, applique la méthode, puis vérifie ta réponse.",
+    mistakes: ["Répondre trop vite", "Ne pas relire la consigne", "Oublier de justifier", "Ne pas corriger ses erreurs"],
+    summary: "L’objectif est de comprendre la notion, s’entraîner progressivement et gagner en autonomie."
   };
 }
 
@@ -200,18 +249,21 @@ export default function App() {
     resetExercise();
     setPage("course");
     setAiMessage(`Chapitre ouvert : ${chapters[index].title}.`);
+    setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 50);
   }
 
   function startExercise() {
     if (!activeChapter) return;
     resetExercise();
     setPage("exercise");
+    setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 50);
   }
 
   function nextExercise() {
     setExerciseStep((prev) => prev + 1);
     resetExercise();
     setAiMessage("Nouvel exercice chargé pour éviter la mémorisation.");
+    setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 50);
   }
 
   function validateExercise() {
@@ -314,9 +366,13 @@ export default function App() {
             setPage={setPage}
           />
         )}
-        <Evaluation score={score} setScore={setScore} level={level} />
-        <Security />
-        <Footer />
+        {page === "home" && (
+          <>
+            <Evaluation score={score} setScore={setScore} level={level} />
+            <Security />
+            <Footer />
+          </>
+        )}
       </div>
       {showDemo && <DemoModal setShowDemo={setShowDemo} />}
       {showLogin && <LoginModal setShowLogin={setShowLogin} userEmail={userEmail} setUserEmail={setUserEmail} password={password} setPassword={setPassword} handleLogin={handleLogin} handleSignup={handleSignup} />}
@@ -379,12 +435,34 @@ function CourseSelector({ level, setLevel, subject, setSubject, subjects, chapte
 function CoursePage({ level, subject, selectedSubject, chapter, setPage, startExercise, completeChapter }) {
   return (
     <main className="max-w-6xl mx-auto px-6 py-12">
-      <Button onClick={() => setPage("home")} className="mb-6 rounded-2xl bg-white/10 text-white px-5 py-3 border border-white/10">← Retour aux chapitres</Button>
+      <Button onClick={() => { setPage("home"); setTimeout(() => document.getElementById("cours")?.scrollIntoView({ behavior: "smooth" }), 50); }} className="mb-6 rounded-2xl bg-white/10 text-white px-5 py-3 border border-white/10">← Retour aux chapitres</Button>
       <div className="rounded-[2rem] bg-white text-slate-950 p-8 md:p-12 shadow-2xl">
         <div className="flex items-center gap-4 mb-8"><div className={`h-14 w-14 rounded-2xl bg-gradient-to-br ${selectedSubject.color} flex items-center justify-center text-white text-2xl`}>{selectedSubject.icon}</div><div><p className="text-slate-500">{level} · {subject}</p><h1 className="text-4xl font-black">{chapter.title}</h1></div></div>
         <div className="prose max-w-none"><p className="text-xl text-slate-700 leading-relaxed">{chapter.lesson}</p></div>
         <div className="mt-8 grid md:grid-cols-2 gap-6"><div className="rounded-3xl bg-slate-100 p-6"><h2 className="text-2xl font-black mb-4">Objectifs</h2><ul className="space-y-2 text-slate-700">{chapter.objectives.map((o) => <li key={o}>✅ {o}</li>)}</ul></div><div className="rounded-3xl bg-slate-100 p-6"><h2 className="text-2xl font-black mb-4">Méthode</h2><ol className="space-y-2 text-slate-700">{chapter.method.map((m, i) => <li key={m}>{i + 1}. {m}</li>)}</ol></div></div>
-        <div className="mt-8 rounded-3xl bg-indigo-50 border border-indigo-100 p-6"><h2 className="text-2xl font-black mb-3">Explication détaillée</h2><p className="text-slate-700 leading-relaxed">Lis le cours, repère les mots importants, puis applique la méthode étape par étape. L’exercice suivant sera affiché sur une page complète pour que l’élève reste concentré.</p></div>
+        <div className="mt-8 rounded-3xl bg-indigo-50 border border-indigo-100 p-6">
+          <h2 className="text-2xl font-black mb-3">Leçon détaillée</h2>
+          <p className="text-slate-700 leading-relaxed text-lg">{chapter.details.definition}</p>
+        </div>
+
+        <div className="mt-6 rounded-3xl bg-emerald-50 border border-emerald-100 p-6">
+          <h2 className="text-2xl font-black mb-3">Exemple guidé</h2>
+          <p className="text-slate-700 leading-relaxed text-lg">{chapter.details.example}</p>
+        </div>
+
+        <div className="mt-6 grid md:grid-cols-2 gap-6">
+          <div className="rounded-3xl bg-rose-50 border border-rose-100 p-6">
+            <h2 className="text-2xl font-black mb-4">Erreurs fréquentes à éviter</h2>
+            <ul className="space-y-2 text-slate-700">
+              {chapter.details.mistakes.map((mistake) => <li key={mistake}>⚠️ {mistake}</li>)}
+            </ul>
+          </div>
+          <div className="rounded-3xl bg-slate-100 p-6">
+            <h2 className="text-2xl font-black mb-4">Résumé à retenir</h2>
+            <p className="text-slate-700 leading-relaxed">{chapter.details.summary}</p>
+            <p className="mt-4 text-indigo-700 font-bold">Conseil IA : commence par 2 exercices simples, puis passe au niveau supérieur.</p>
+          </div>
+        </div>
         <div className="mt-8 flex flex-col sm:flex-row gap-4"><Button onClick={startExercise} className="rounded-2xl px-8 py-4 bg-indigo-600 text-white hover:bg-indigo-500">Commencer les exercices plein écran</Button><Button onClick={completeChapter} className="rounded-2xl px-8 py-4 bg-slate-950 text-white hover:bg-slate-800">Marquer le chapitre terminé</Button></div>
       </div>
     </main>
@@ -395,7 +473,7 @@ function ExercisePage({ level, subject, chapter, currentExercise, exerciseStep, 
   return (
     <main className="min-h-[80vh] max-w-5xl mx-auto px-6 py-10 flex items-center">
       <div className="w-full rounded-[2.5rem] bg-white text-slate-950 p-8 md:p-14 shadow-2xl">
-        <div className="flex justify-between items-start gap-4 mb-8"><div><p className="text-indigo-600 font-bold">{level} · {subject}</p><h1 className="text-4xl md:text-5xl font-black mt-2">{chapter.title}</h1><p className="text-slate-500 mt-2">Exercice {(exerciseStep % chapter.exercises.length) + 1} sur {chapter.exercises.length} · renouvelé par session</p></div><Button onClick={() => setPage("course")} className="rounded-2xl bg-slate-100 px-5 py-3">Retour cours</Button></div>
+        <div className="flex justify-between items-start gap-4 mb-8"><div><p className="text-indigo-600 font-bold">{level} · {subject}</p><h1 className="text-4xl md:text-5xl font-black mt-2">{chapter.title}</h1><p className="text-slate-500 mt-2">Exercice {(exerciseStep % chapter.exercises.length) + 1} sur {chapter.exercises.length} · renouvelé par session</p></div><Button onClick={() => { setPage("course"); setTimeout(() => window.scrollTo({ top: 0, behavior: "smooth" }), 50); }} className="rounded-2xl bg-slate-100 px-5 py-3">Retour cours</Button></div>
         <div className="rounded-[2rem] bg-slate-950 text-white p-8 md:p-10 mb-8"><p className="text-indigo-300 font-semibold mb-3">Question</p><h2 className="text-3xl md:text-4xl font-black leading-tight">{currentExercise.question}</h2></div>
         <input value={answer} onChange={(e) => setAnswer(e.target.value)} autoFocus placeholder="Écris ta réponse ici..." className="w-full rounded-3xl bg-slate-100 border border-slate-200 px-6 py-5 text-2xl outline-none focus:ring-4 focus:ring-indigo-200" />
         <div className="mt-6 grid md:grid-cols-3 gap-4"><Button onClick={validateExercise} className="rounded-2xl bg-indigo-600 hover:bg-indigo-500 text-white py-4 text-lg">Valider</Button><Button onClick={nextExercise} className="rounded-2xl bg-slate-950 hover:bg-slate-800 text-white py-4 text-lg">Exercice suivant</Button><Button onClick={() => setShowCorrection(!showCorrection)} className="rounded-2xl bg-slate-100 text-slate-950 py-4 text-lg">Correction</Button></div>
