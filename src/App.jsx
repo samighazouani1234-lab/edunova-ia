@@ -203,6 +203,7 @@ export default function App() {
   const [userEmail, setUserEmail] = useState("");
   const [password, setPassword] = useState("");
   const [aiMessage, setAiMessage] = useState("Bonjour 👋 Je suis ton assistant IA scolaire. Choisis une matière pour commencer.");
+  const [completedCourses, setCompletedCourses] = useState([]);
 
   const course = useMemo(() => courseDatabase[level][subject], [level, subject]);
 
@@ -214,6 +215,19 @@ export default function App() {
       setExerciseResult("❌ Réponse incorrecte. Essaie encore.");
       setScore((prev) => Math.max(prev - 3, 0));
     }
+  }
+
+  function markCourseCompleted() {
+    const courseKey = `${level}-${subject}`;
+    if (!completedCourses.includes(courseKey)) {
+      setCompletedCourses([...completedCourses, courseKey]);
+      setScore((prev) => Math.min(prev + 8, 100));
+      setAiMessage(`Bravo 🎉 Tu as terminé le cours de ${subject} niveau ${level}.`);
+    }
+  }
+
+  function scrollToCourses() {
+    document.getElementById("cours")?.scrollIntoView({ behavior: "smooth" });
   }
 
   async function handleLogin() {
@@ -272,7 +286,7 @@ export default function App() {
                 Une plateforme haut de gamme pour les élèves du primaire au collège : cours personnalisés, exercices par matière, évaluations intelligentes et suivi des progrès.
               </p>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
-                <Button className="rounded-2xl h-13 px-7 bg-gradient-to-r from-indigo-500 to-fuchsia-500 hover:opacity-90 shadow-xl shadow-indigo-500/20">
+                <Button onClick={scrollToCourses} className="rounded-2xl h-13 px-7 bg-gradient-to-r from-indigo-500 to-fuchsia-500 hover:opacity-90 shadow-xl shadow-indigo-500/20">
                   Commencer un cours <ArrowRight className="h-4 w-4 ml-2" />
                 </Button>
                 <Button onClick={() => setShowDemo(true)} variant="outline" className="rounded-2xl h-13 px-7 border-white/15 bg-white/5 text-white hover:bg-white/10">
@@ -312,11 +326,11 @@ export default function App() {
                     <div className="grid grid-cols-2 gap-3">
                       <div className="rounded-2xl bg-white/10 p-4">
                         <p className="text-white/50 text-sm">Progression</p>
-                        <p className="text-3xl font-black mt-2">78%</p>
+                        <p className="text-3xl font-black mt-2">{score}%</p>
                       </div>
                       <div className="rounded-2xl bg-white/10 p-4">
                         <p className="text-white/50 text-sm">Série</p>
-                        <p className="text-3xl font-black mt-2">12 j</p>
+                        <p className="text-3xl font-black mt-2">{completedCourses.length} cours</p>
                       </div>
                     </div>
                     <div className="mt-4 rounded-2xl bg-white p-5 text-slate-950">
@@ -324,7 +338,7 @@ export default function App() {
                         <Star className="h-5 w-5" />
                         <p className="font-bold">Recommandation IA</p>
                       </div>
-                      <p className="text-sm text-slate-600">Revoir les équations simples, puis passer à une évaluation de 10 minutes.</p>
+                      <p className="text-sm text-slate-600">{completedCourses.length === 0 ? "Commence un premier cours, puis valide l’exercice pour faire progresser ton niveau." : `Déjà ${completedCourses.length} cours terminé(s). Continue avec une nouvelle matière.`}</p>
                     </div>
                   </div>
                 </CardContent>
@@ -337,6 +351,7 @@ export default function App() {
               <div>
                 <p className="text-indigo-300 font-semibold">Cours IA dynamiques</p>
                 <h2 className="text-4xl font-black mt-2">Choisis un niveau et une matière</h2>
+                <p className="text-white/60 mt-3 max-w-2xl">Chaque module contient une leçon complète, des objectifs, une méthode, un exemple guidé, un mini-quiz et un exercice corrigé.</p>
               </div>
               <div className="flex rounded-2xl bg-white/10 p-1 border border-white/10 w-fit">
                 {levels.map((item) => (
@@ -410,6 +425,14 @@ export default function App() {
                     <p className="font-bold mb-2 flex items-center gap-2"><Sparkles className="h-4 w-4" /> Adaptation IA</p>
                     <p className="text-slate-600 text-sm">Le contenu s’ajuste au niveau choisi, au score de l’élève et à ses erreurs fréquentes.</p>
                   </div>
+
+                  <Button onClick={markCourseCompleted} className="mt-6 rounded-2xl h-12 px-6 bg-slate-950 hover:bg-slate-800 text-white w-full">
+                    ✅ Marquer ce cours comme terminé
+                  </Button>
+
+                  <p className="mt-3 text-sm text-slate-500">
+                    Progression : {completedCourses.includes(`${level}-${subject}`) ? "cours terminé" : "cours en cours"}
+                  </p>
                 </CardContent>
               </Card>
 
@@ -632,7 +655,3 @@ export default function App() {
             <p className="text-xs text-slate-500 mt-4 text-center">Démo front-end : l’authentification réelle nécessite un backend sécurisé.</p>
           </motion.div>
         </div>
-      )}
-    </div>
-  );
-}
