@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from "react";
+import { supabase } from "./supabase";
 import { motion } from "framer-motion";
 const BookOpen = () => <span>📘</span>;
 const Brain = () => <span>🧠</span>;
@@ -200,6 +201,7 @@ export default function App() {
   const [exerciseResult, setExerciseResult] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [userEmail, setUserEmail] = useState("");
+  const [password, setPassword] = useState("");
   const [aiMessage, setAiMessage] = useState("Bonjour 👋 Je suis ton assistant IA scolaire. Choisis une matière pour commencer.");
 
   const course = useMemo(() => courseDatabase[level][subject], [level, subject]);
@@ -214,7 +216,17 @@ export default function App() {
     }
   }
 
-  function handleLogin() {
+  async function handleLogin() {
+    const { error } = await supabase.auth.signInWithPassword({
+      email: userEmail,
+      password: password,
+    });
+
+    if (error) {
+      alert(error.message);
+      return;
+    }
+
     setIsLoggedIn(true);
     setShowLogin(false);
     setAiMessage(`Bienvenue ${userEmail || 'élève'} 👋 Ton espace IA est prêt.`);
@@ -608,7 +620,13 @@ export default function App() {
             <label className="text-sm font-semibold">Mot de passe</label>
             <div className="mt-2 mb-6 rounded-2xl bg-slate-100 px-4 py-3 flex items-center gap-3">
               <Lock className="h-4 w-4 text-slate-400" />
-              <input type="password" placeholder="••••••••" className="bg-transparent outline-none w-full" />
+              <input
+                type="password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+                placeholder="••••••••"
+                className="bg-transparent outline-none w-full"
+              />
             </div>
             <Button onClick={handleLogin} className="w-full rounded-2xl h-12 bg-slate-950 hover:bg-slate-800 text-white">Accéder au tableau de bord</Button>
             <p className="text-xs text-slate-500 mt-4 text-center">Démo front-end : l’authentification réelle nécessite un backend sécurisé.</p>
