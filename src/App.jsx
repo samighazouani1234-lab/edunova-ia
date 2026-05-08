@@ -39,21 +39,295 @@ const subjects = [
   { name: "Culture générale", icon: Music, color: "from-fuchsia-500 to-purple-500" },
 ];
 
-const mathProgram = {
-  Primaire: [
-    { title: "Nombres et calculs", items: ["Lire et écrire les nombres", "Addition, soustraction, multiplication", "Division simple", "Calcul mental", "Problèmes à étapes"] },
-    { title: "Fractions et décimaux", items: ["Comprendre une fraction", "Comparer des fractions", "Nombres décimaux", "Passer d’une fraction simple à un décimal"] },
-    { title: "Géométrie", items: ["Droites, segments, angles", "Carré, rectangle, triangle, cercle", "Symétrie", "Périmètre et aire"] },
-    { title: "Mesures", items: ["Longueurs", "Masses", "Durées", "Monnaie", "Conversions simples"] },
-    { title: "Organisation de données", items: ["Lire un tableau", "Lire un graphique", "Résoudre un problème avec données"] },
-  ],
-  Collège: [
-    { title: "Calcul numérique", items: ["Priorités opératoires", "Fractions", "Nombres relatifs", "Puissances", "Calcul littéral"] },
-    { title: "Équations et problèmes", items: ["Équations du premier degré", "Inéquations simples", "Mise en équation", "Vérification d’une solution"] },
-    { title: "Proportionnalité", items: ["Tableaux de proportionnalité", "Pourcentages", "Échelles", "Vitesse, distance, temps"] },
-    { title: "Géométrie", items: ["Triangles", "Théorème de Pythagore", "Théorème de Thalès", "Angles", "Transformations"] },
-    { title: "Fonctions et statistiques", items: ["Lire une fonction", "Graphiques", "Moyenne", "Médiane", "Probabilités simples"] },
-  ],
+const subjectPrograms = {
+  Primaire: {
+    Mathématiques: [
+      {
+        title: "Nombres et calculs",
+        lesson: "Tu apprends à lire les grands nombres, poser les opérations et résoudre des problèmes simples avec plusieurs étapes.",
+        items: ["Lire et écrire les nombres", "Addition", "Soustraction", "Multiplication", "Division simple"],
+        exercises: [
+          { question: "Calcule : 245 + 138 = ?", answer: "383" },
+          { question: "Calcule : 500 - 125 = ?", answer: "375" },
+          { question: "Calcule : 8 × 7 = ?", answer: "56" }
+        ]
+      },
+      {
+        title: "Fractions et décimaux",
+        lesson: "Tu découvres les fractions, les nombres décimaux et la manière de comparer deux quantités.",
+        items: ["Comprendre une fraction", "Comparer des fractions", "Nombres décimaux", "Passer d’une fraction simple à un décimal"],
+        exercises: [
+          { question: "Quelle fraction représente une moitié ?", answer: "1/2" },
+          { question: "Dans 3/4, combien de parts sont prises ?", answer: "3" },
+          { question: "Quelle fraction obtient-on avec 3 parts sur 4 ?", answer: "3/4" }
+        ]
+      },
+      {
+        title: "Géométrie",
+        lesson: "Tu apprends à reconnaître les figures, utiliser les angles, comprendre la symétrie et calculer des périmètres simples.",
+        items: ["Droites", "Segments", "Angles", "Carré", "Rectangle", "Symétrie"],
+        exercises: [
+          { question: "Combien de côtés possède un rectangle ?", answer: "4" },
+          { question: "Combien d’angles a un triangle ?", answer: "3" },
+          { question: "Un carré a-t-il 4 côtés égaux ?", answer: "oui" }
+        ]
+      }
+    ],
+    Français: [
+      {
+        title: "Grammaire",
+        lesson: "Tu apprends à identifier le sujet, le verbe, les noms, les adjectifs et les phrases correctes.",
+        items: ["Sujet", "Verbe", "Nom", "Adjectif", "Phrase simple"],
+        exercises: [
+          { question: "Dans ‘Le chien court’, quel est le verbe ?", answer: "court" },
+          { question: "Dans ‘La fille chante’, quel est le sujet ?", answer: "La fille" },
+          { question: "Dans ‘un grand arbre’, quel mot est l’adjectif ?", answer: "grand" }
+        ]
+      },
+      {
+        title: "Lecture compréhension",
+        lesson: "Tu apprends à lire un court texte, retrouver les informations importantes et répondre avec une phrase complète.",
+        items: ["Lire", "Comprendre", "Repérer", "Répondre", "Justifier"],
+        exercises: [
+          { question: "Pourquoi faut-il relire un texte ?", answer: "Pour mieux comprendre" },
+          { question: "Comment répond-on à une question de lecture ?", answer: "Avec une phrase" },
+          { question: "Que cherche-t-on dans un texte ?", answer: "Les informations importantes" }
+        ]
+      }
+    ],
+    Anglais: [
+      {
+        title: "Se présenter",
+        lesson: "Tu apprends à dire ton nom, ton âge et ce que tu aimes en anglais.",
+        items: ["Hello", "My name is", "I am", "I like"],
+        exercises: [
+          { question: "Traduis : Bonjour", answer: "Hello" },
+          { question: "Traduis : Je m’appelle Lina", answer: "My name is Lina" },
+          { question: "Que signifie I like ?", answer: "J’aime" }
+        ]
+      },
+      {
+        title: "Vocabulaire de base",
+        lesson: "Tu apprends les couleurs, les nombres, les jours et les objets de la classe.",
+        items: ["Couleurs", "Nombres", "Jours", "Objets"],
+        exercises: [
+          { question: "Comment dit-on rouge en anglais ?", answer: "red" },
+          { question: "Comment dit-on bleu en anglais ?", answer: "blue" },
+          { question: "Comment dit-on lundi en anglais ?", answer: "Monday" }
+        ]
+      }
+    ],
+    Sciences: [
+      {
+        title: "Les états de l’eau",
+        lesson: "Tu apprends que l’eau peut être solide, liquide ou gazeuse selon la température.",
+        items: ["Solide", "Liquide", "Gaz", "Fusion", "Évaporation"],
+        exercises: [
+          { question: "Quel est l’état d’un glaçon ?", answer: "solide" },
+          { question: "Que devient la glace quand elle fond ?", answer: "liquide" },
+          { question: "La vapeur est-elle un gaz ?", answer: "oui" }
+        ]
+      },
+      {
+        title: "Le vivant",
+        lesson: "Tu apprends à reconnaître les êtres vivants, leurs besoins et leur cycle de vie.",
+        items: ["Animaux", "Plantes", "Besoins", "Croissance"],
+        exercises: [
+          { question: "Une plante a-t-elle besoin d’eau ?", answer: "oui" },
+          { question: "Un animal est-il un être vivant ?", answer: "oui" },
+          { question: "Que permet la lumière aux plantes ?", answer: "grandir" }
+        ]
+      }
+    ],
+    "Histoire-Géo": [
+      {
+        title: "Lire une carte",
+        lesson: "Tu apprends à utiliser une carte, une légende et des repères pour situer un lieu.",
+        items: ["Carte", "Légende", "Symboles", "Repères"],
+        exercises: [
+          { question: "À quoi sert la légende d’une carte ?", answer: "À expliquer les symboles" },
+          { question: "Une carte sert-elle à se repérer ?", answer: "oui" },
+          { question: "Que représente souvent le bleu sur une carte ?", answer: "l’eau" }
+        ]
+      },
+      {
+        title: "Se repérer dans le temps",
+        lesson: "Tu apprends à utiliser avant, après, une date et une frise chronologique.",
+        items: ["Avant", "Après", "Date", "Frise"],
+        exercises: [
+          { question: "Sur une frise, que montre une date ?", answer: "un moment" },
+          { question: "Le passé vient-il avant le présent ?", answer: "oui" },
+          { question: "Une frise sert-elle à organiser le temps ?", answer: "oui" }
+        ]
+      }
+    ],
+    "Culture générale": [
+      {
+        title: "Arts et musique",
+        lesson: "Tu découvres les instruments, les œuvres, les sons et les familles d’instruments.",
+        items: ["Instruments", "Sons", "Cordes", "Vent", "Percussions"],
+        exercises: [
+          { question: "La guitare est-elle un instrument à cordes ?", answer: "oui" },
+          { question: "La flûte est-elle un instrument à vent ?", answer: "oui" },
+          { question: "Le tambour est-il une percussion ?", answer: "oui" }
+        ]
+      },
+      {
+        title: "Découverte du monde",
+        lesson: "Tu découvres les pays, les monuments, les inventions et les métiers.",
+        items: ["Pays", "Monuments", "Inventions", "Métiers"],
+        exercises: [
+          { question: "La Tour Eiffel est-elle en France ?", answer: "oui" },
+          { question: "Un médecin soigne-t-il les personnes ?", answer: "oui" },
+          { question: "Une invention sert-elle à résoudre un problème ?", answer: "oui" }
+        ]
+      }
+    ]
+  },
+  Collège: {
+    Mathématiques: [
+      {
+        title: "Calcul numérique",
+        lesson: "Tu travailles les priorités opératoires, les fractions, les nombres relatifs, les puissances et le calcul littéral.",
+        items: ["Priorités opératoires", "Fractions", "Nombres relatifs", "Puissances", "Calcul littéral"],
+        exercises: [
+          { question: "Calcule : 3 + 2 × 5 = ?", answer: "13" },
+          { question: "Calcule : -3 + 8 = ?", answer: "5" },
+          { question: "Calcule : 2² = ?", answer: "4" }
+        ]
+      },
+      {
+        title: "Équations et problèmes",
+        lesson: "Tu apprends à résoudre des équations, mettre un problème en équation et vérifier une solution.",
+        items: ["Équations", "Inéquations", "Mise en équation", "Vérification"],
+        exercises: [
+          { question: "Résous : x + 8 = 15.", answer: "x = 7" },
+          { question: "Résous : x - 4 = 10.", answer: "x = 14" },
+          { question: "Résous : 2x = 10.", answer: "x = 5" }
+        ]
+      },
+      {
+        title: "Proportionnalité",
+        lesson: "Tu apprends les tableaux de proportionnalité, les pourcentages, les échelles et les problèmes de vitesse.",
+        items: ["Tableaux", "Pourcentages", "Échelles", "Vitesse"],
+        exercises: [
+          { question: "50% de 80 vaut combien ?", answer: "40" },
+          { question: "10% de 200 vaut combien ?", answer: "20" },
+          { question: "Si 2 cahiers coûtent 6€, combien coûtent 4 cahiers ?", answer: "12" }
+        ]
+      }
+    ],
+    Français: [
+      {
+        title: "Analyse de texte",
+        lesson: "Tu apprends à identifier le narrateur, les personnages, le cadre et la structure d’un récit.",
+        items: ["Narrateur", "Personnages", "Cadre", "Récit", "Citations"],
+        exercises: [
+          { question: "Qui raconte une histoire ?", answer: "le narrateur" },
+          { question: "Quel élément lance souvent l’histoire ?", answer: "l’élément perturbateur" },
+          { question: "Pourquoi cite-t-on le texte ?", answer: "pour justifier" }
+        ]
+      },
+      {
+        title: "Expression écrite",
+        lesson: "Tu apprends à organiser tes idées, écrire un paragraphe et améliorer ton style.",
+        items: ["Plan", "Paragraphe", "Connecteurs", "Correction"],
+        exercises: [
+          { question: "À quoi sert un connecteur logique ?", answer: "à relier les idées" },
+          { question: "Un paragraphe développe-t-il une idée ?", answer: "oui" },
+          { question: "Pourquoi relire son texte ?", answer: "pour corriger" }
+        ]
+      }
+    ],
+    Anglais: [
+      {
+        title: "Prétérit",
+        lesson: "Tu apprends à parler d’actions passées avec les verbes réguliers et irréguliers.",
+        items: ["Past simple", "Verbes réguliers", "Verbes irréguliers", "Questions"],
+        exercises: [
+          { question: "Mets au passé : I play football.", answer: "I played football" },
+          { question: "Quel est le passé de go ?", answer: "went" },
+          { question: "Que signifie yesterday ?", answer: "hier" }
+        ]
+      },
+      {
+        title: "Compréhension écrite",
+        lesson: "Tu apprends à lire un texte en anglais, repérer les mots clés et répondre à des questions.",
+        items: ["Mots clés", "Questions", "Réponses", "Vocabulaire"],
+        exercises: [
+          { question: "Que signifie who ?", answer: "qui" },
+          { question: "Que signifie where ?", answer: "où" },
+          { question: "Que signifie when ?", answer: "quand" }
+        ]
+      }
+    ],
+    Sciences: [
+      {
+        title: "Cellule et vivant",
+        lesson: "Tu découvres la cellule, les organes et l’organisation des êtres vivants.",
+        items: ["Cellule", "Noyau", "Membrane", "Organe"],
+        exercises: [
+          { question: "Quel élément délimite la cellule ?", answer: "la membrane" },
+          { question: "La cellule est-elle l’unité du vivant ?", answer: "oui" },
+          { question: "Où se trouve l’information génétique ?", answer: "dans le noyau" }
+        ]
+      },
+      {
+        title: "Démarche scientifique",
+        lesson: "Tu apprends à formuler une hypothèse, faire une expérience et conclure.",
+        items: ["Observation", "Hypothèse", "Expérience", "Conclusion"],
+        exercises: [
+          { question: "Que formule-t-on avant une expérience ?", answer: "une hypothèse" },
+          { question: "À quoi sert une conclusion ?", answer: "à répondre au problème" },
+          { question: "Une expérience sert-elle à tester une idée ?", answer: "oui" }
+        ]
+      }
+    ],
+    "Histoire-Géo": [
+      {
+        title: "Révolution française",
+        lesson: "Tu étudies les causes, les événements et les conséquences de la Révolution française.",
+        items: ["1789", "Monarchie", "République", "Droits"],
+        exercises: [
+          { question: "En quelle année commence la Révolution française ?", answer: "1789" },
+          { question: "Quel régime est remis en cause ?", answer: "la monarchie" },
+          { question: "La Déclaration affirme-t-elle des droits ?", answer: "oui" }
+        ]
+      },
+      {
+        title: "Lire un document géographique",
+        lesson: "Tu apprends à analyser une carte, un graphique ou un paysage géographique.",
+        items: ["Carte", "Graphique", "Légende", "Analyse"],
+        exercises: [
+          { question: "À quoi sert une légende ?", answer: "à expliquer les symboles" },
+          { question: "Un graphique représente-t-il des données ?", answer: "oui" },
+          { question: "Que faut-il lire en premier sur une carte ?", answer: "le titre" }
+        ]
+      }
+    ],
+    "Culture générale": [
+      {
+        title: "Médias et esprit critique",
+        lesson: "Tu apprends à vérifier une information, comparer les sources et repérer les informations douteuses.",
+        items: ["Média", "Source", "Date", "Auteur", "Fiabilité"],
+        exercises: [
+          { question: "Pourquoi vérifier une source ?", answer: "pour savoir si elle est fiable" },
+          { question: "Faut-il comparer plusieurs sources ?", answer: "oui" },
+          { question: "Une date aide-t-elle à vérifier une information ?", answer: "oui" }
+        ]
+      },
+      {
+        title: "Monde actuel",
+        lesson: "Tu découvres les institutions, les innovations, les enjeux écologiques et sociaux.",
+        items: ["Institutions", "Innovation", "Écologie", "Société"],
+        exercises: [
+          { question: "Le recyclage aide-t-il l’environnement ?", answer: "oui" },
+          { question: "Une innovation est-elle une nouveauté utile ?", answer: "oui" },
+          { question: "Pourquoi apprendre l’actualité ?", answer: "pour comprendre le monde" }
+        ]
+      }
+    ]
+  }
 };
 
 const courseDatabase = {
@@ -215,14 +489,25 @@ export default function App() {
   const [password, setPassword] = useState("");
   const [aiMessage, setAiMessage] = useState("Bonjour 👋 Je suis ton assistant IA scolaire. Choisis une matière pour commencer.");
   const [completedCourses, setCompletedCourses] = useState([]);
+  const [selectedChapter, setSelectedChapter] = useState(null);
+  const [exerciseStep, setExerciseStep] = useState(0);
 
   const course = useMemo(() => courseDatabase[level][subject], [level, subject]);
+  const currentChapters = subjectPrograms[level][subject] || [];
+  const activeChapter = selectedChapter !== null ? currentChapters[selectedChapter] : null;
+  const chapterExercises = activeChapter?.exercises || [];
+  const currentExercise = chapterExercises.length > 0 ? chapterExercises[exerciseStep % chapterExercises.length] : null;
+  const activeExercise = currentExercise ? currentExercise.question : course.exercise;
+  const activeAnswer = currentExercise ? currentExercise.answer : course.answer;
   const selectedSubject = subjects.find((item) => item.name === subject) || subjects[0];
 
   function handleExerciseValidation() {
-    if (userAnswer.toLowerCase().trim() === course.answer.toLowerCase().trim()) {
+    if (userAnswer.toLowerCase().trim() === activeAnswer.toLowerCase().trim()) {
       setExerciseResult("✅ Bonne réponse ! Excellent travail.");
       setScore((prev) => Math.min(prev + 5, 100));
+      if (chapterExercises.length > 0) {
+        setExerciseStep((prev) => prev + 1);
+      }
     } else {
       setExerciseResult("❌ Réponse incorrecte. Essaie encore.");
       setScore((prev) => Math.max(prev - 3, 0));
@@ -354,7 +639,7 @@ export default function App() {
               {subjects.map((item) => {
                 const SubjectIcon = item.icon;
                 return (
-                  <button key={item.name} onClick={() => { setSubject(item.name); setAnswerVisible(false); setExerciseResult(""); setUserAnswer(""); setAiMessage(`Très bon choix 👍 Nous allons travailler ${item.name} en niveau ${level}.`); }} className={`rounded-3xl p-5 text-left border transition ${subject === item.name ? "bg-white text-slate-950 border-white" : "bg-white/10 border-white/10 hover:bg-white/15"}`}>
+                  <button key={item.name} onClick={() => { setSubject(item.name); setSelectedChapter(null); setExerciseStep(0); setAnswerVisible(false); setExerciseResult(""); setUserAnswer(""); setAiMessage(`Très bon choix 👍 Nous allons travailler ${item.name} en niveau ${level}.`); }} className={`rounded-3xl p-5 text-left border transition ${subject === item.name ? "bg-white text-slate-950 border-white" : "bg-white/10 border-white/10 hover:bg-white/15"}`}>
                     <div className={`h-11 w-11 rounded-2xl bg-gradient-to-br ${item.color} flex items-center justify-center text-white mb-4`}><SubjectIcon /></div>
                     <p className="font-bold text-sm">{item.name}</p>
                   </button>
@@ -375,20 +660,41 @@ export default function App() {
 
                   <p className="text-slate-700 leading-relaxed text-lg">{course.lesson}</p>
 
-                  {subject === "Mathématiques" && (
+                  {currentChapters.length > 0 && (
                     <div className="mt-6 rounded-3xl bg-slate-950 text-white p-6">
-                      <p className="text-indigo-300 font-semibold mb-2">Programme complet de mathématiques</p>
-                      <h4 className="text-2xl font-black mb-5">Tous les chapitres disponibles</h4>
+                      <p className="text-indigo-300 font-semibold mb-2">Programme complet</p>
+                      <h4 className="text-2xl font-black mb-5">Chapitres disponibles en {subject}</h4>
                       <div className="grid md:grid-cols-2 gap-4">
-                        {mathProgram[level].map((chapter) => (
-                          <div key={chapter.title} className="rounded-2xl bg-white/10 border border-white/10 p-5">
+                        {currentChapters.map((chapter, index) => (
+                          <button
+                            key={chapter.title}
+                            onClick={() => {
+                              setSelectedChapter(index);
+                              setExerciseStep(0);
+                              setUserAnswer("");
+                              setExerciseResult("");
+                              setAnswerVisible(false);
+                              setAiMessage(`Chapitre ouvert : ${chapter.title}. Les exercices changeront avec ta progression.`);
+                            }}
+                            className={`rounded-2xl border p-5 text-left transition hover:scale-[1.02] ${selectedChapter === index ? "bg-indigo-500/30 border-indigo-300" : "bg-white/10 border-white/10 hover:bg-white/15"}`}
+                          >
                             <p className="font-bold mb-3">{chapter.title}</p>
                             <ul className="space-y-2 text-sm text-white/70">
                               {chapter.items.map((item) => <li key={item}>✅ {item}</li>)}
                             </ul>
-                          </div>
+                            <p className="mt-4 text-xs text-indigo-200 font-semibold">Cliquer pour ouvrir le cours →</p>
+                          </button>
                         ))}
                       </div>
+                    </div>
+                  )}
+
+                  {activeChapter && (
+                    <div className="mt-6 rounded-3xl bg-indigo-50 border border-indigo-100 p-6">
+                      <p className="text-sm text-indigo-600 font-semibold">Chapitre sélectionné</p>
+                      <h4 className="text-2xl font-black mt-1 mb-3">{activeChapter.title}</h4>
+                      <p className="text-slate-700 leading-relaxed">{activeChapter.lesson}</p>
+                      <p className="mt-4 text-sm text-indigo-700 font-semibold">Exercice actuel : {chapterExercises.length ? (exerciseStep % chapterExercises.length) + 1 : 1} / {chapterExercises.length || 1}</p>
                     </div>
                   )}
 
@@ -414,13 +720,13 @@ export default function App() {
                 <CardContent className="p-8">
                   <p className="text-indigo-300 font-semibold mb-2">Exercice</p>
                   <h3 className="text-2xl font-black mb-4">À toi de jouer</h3>
-                  <p className="text-white/75 leading-relaxed">{course.exercise}</p>
+                  <p className="text-white/75 leading-relaxed">{activeExercise}</p>
                   <div className="mt-6 space-y-3">
                     <input value={userAnswer} onChange={(e) => setUserAnswer(e.target.value)} placeholder="Écris ta réponse..." className="w-full rounded-2xl bg-white/10 border border-white/10 px-4 py-3 outline-none" />
                     <Button onClick={handleExerciseValidation} className="rounded-2xl bg-indigo-500 hover:bg-indigo-400 w-full text-white h-12">Valider ma réponse</Button>
                     {exerciseResult && <div className="rounded-2xl bg-white/10 p-4 text-sm text-white/80">{exerciseResult}</div>}
                     <Button onClick={() => setAnswerVisible(!answerVisible)} className="rounded-2xl bg-white text-slate-950 hover:bg-white/90 w-full py-2">{answerVisible ? "Masquer la correction" : "Voir la correction"}</Button>
-                    {answerVisible && <div className="rounded-2xl bg-emerald-500/15 border border-emerald-400/20 p-4"><p className="font-bold flex items-center gap-2"><CheckCircle2 /> Correction</p><p className="text-sm text-white/75 mt-2">{course.answer}</p></div>}
+                    {answerVisible && <div className="rounded-2xl bg-emerald-500/15 border border-emerald-400/20 p-4"><p className="font-bold flex items-center gap-2"><CheckCircle2 /> Correction</p><p className="text-sm text-white/75 mt-2">{activeAnswer}</p></div>}
                   </div>
                 </CardContent>
               </Card>
