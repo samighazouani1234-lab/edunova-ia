@@ -652,6 +652,10 @@ export default function App() {
               />
             </div>
             <Button onClick={handleLogin} className="w-full rounded-2xl h-12 bg-slate-950 hover:bg-slate-800 text-white">Accéder au tableau de bord</Button>
-            <p className="text-xs text-slate-500 mt-4 text-center">Démo front-end : l’authentification réelle nécessite un backend sécurisé.</p>
+            <p className="text-xs text-slate-500 mt-4 text-center">Connexion sécurisée avec Supabase.</p>
           </motion.div>
         </div>
+      )}
+    </div>
+  );
+}
