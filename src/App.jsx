@@ -45,6 +45,241 @@ const subjects = [
   { name: "Culture générale", icon: Music, color: "from-fuchsia-500 to-purple-500" },
 ];
 
+const mathProgram = {
+  Primaire: [
+    {
+      title: "Nombres et calculs",
+      items: ["Lire et écrire les nombres", "Addition, soustraction, multiplication", "Division simple", "Calcul mental", "Problèmes à étapes"]
+    },
+    {
+      title: "Fractions et décimaux",
+      items: ["Comprendre une fraction", "Comparer des fractions", "Nombres décimaux", "Passer d’une fraction simple à un décimal"]
+    },
+    {
+      title: "Géométrie",
+      items: ["Droites, segments, angles", "Carré, rectangle, triangle, cercle", "Symétrie", "Périmètre et aire"]
+    },
+    {
+      title: "Mesures",
+      items: ["Longueurs", "Masses", "Durées", "Monnaie", "Conversions simples"]
+    },
+    {
+      title: "Organisation de données",
+      items: ["Lire un tableau", "Lire un graphique", "Résoudre un problème avec données"]
+    }
+  ],
+  Collège: [
+    {
+      title: "Calcul numérique",
+      items: ["Priorités opératoires", "Fractions", "Nombres relatifs", "Puissances", "Calcul littéral"]
+    },
+    {
+      title: "Équations et problèmes",
+      items: ["Équations du premier degré", "Inéquations simples", "Mise en équation", "Vérification d’une solution"]
+    },
+    {
+      title: "Proportionnalité",
+      items: ["Tableaux de proportionnalité", "Pourcentages", "Échelles", "Vitesse, distance, temps"]
+    },
+    {
+      title: "Géométrie",
+      items: ["Triangles", "Théorème de Pythagore", "Théorème de Thalès", "Angles", "Transformations"]
+    },
+    {
+      title: "Fonctions et statistiques",
+      items: ["Lire une fonction", "Graphiques", "Moyenne", "Médiane", "Probabilités simples"]
+    }
+  ]
+};
+
+const mathProgram = {
+  Primaire: [
+    {
+      title: "Nombres et calculs",
+      items: ["Lire et écrire les nombres", "Addition, soustraction, multiplication", "Division simple", "Calcul mental", "Problèmes à étapes"]
+    },
+    {
+      title: "Fractions et décimaux",
+      items: ["Comprendre une fraction", "Comparer des fractions", "Nombres décimaux", "Passer d’une fraction simple à un décimal"]
+    },
+    {
+      title: "Géométrie",
+      items: ["Droites, segments, angles", "Carré, rectangle, triangle, cercle", "Symétrie", "Périmètre et aire"]
+    },
+    {
+      title: "Mesures",
+      items: ["Longueurs", "Masses", "Durées", "Monnaie", "Conversions simples"]
+    },
+    {
+      title: "Organisation de données",
+      items: ["Lire un tableau", "Lire un graphique", "Résoudre un problème avec données"]
+    }
+  ],
+  Collège: [
+    {
+      title: "Calcul numérique",
+      items: ["Priorités opératoires", "Fractions", "Nombres relatifs", "Puissances", "Calcul littéral"]
+    },
+    {
+      title: "Équations et problèmes",
+      items: ["Équations du premier degré", "Inéquations simples", "Mise en équation", "Vérification d’une solution"]
+    },
+    {
+      title: "Proportionnalité",
+      items: ["Tableaux de proportionnalité", "Pourcentages", "Échelles", "Vitesse, distance, temps"]
+    },
+    {
+      title: "Géométrie",
+      items: ["Triangles", "Théorème de Pythagore", "Théorème de Thalès", "Angles", "Transformations"]
+    },
+    {
+      title: "Fonctions et statistiques",
+      items: ["Lire une fonction", "Graphiques", "Moyenne", "Médiane", "Probabilités simples"]
+    }
+  ]
+};
+
+const mathProgram = {
+  Primaire: [
+    {
+      title: "Nombres et calculs",
+      items: ["Lire et écrire les nombres", "Addition, soustraction, multiplication", "Division simple", "Calcul mental", "Problèmes à étapes"]
+    },
+    {
+      title: "Fractions et décimaux",
+      items: ["Comprendre une fraction", "Comparer des fractions", "Nombres décimaux", "Passer d’une fraction simple à un décimal"]
+    },
+    {
+      title: "Géométrie",
+      items: ["Droites, segments, angles", "Carré, rectangle, triangle, cercle", "Symétrie", "Périmètre et aire"]
+    },
+    {
+      title: "Mesures",
+      items: ["Longueurs", "Masses", "Durées", "Monnaie", "Conversions simples"]
+    },
+    {
+      title: "Organisation de données",
+      items: ["Lire un tableau", "Lire un graphique", "Résoudre un problème avec données"]
+    }
+  ],
+  Collège: [
+    {
+      title: "Calcul numérique",
+      items: ["Priorités opératoires", "Fractions", "Nombres relatifs", "Puissances", "Calcul littéral"]
+    },
+    {
+      title: "Équations et problèmes",
+      items: ["Équations du premier degré", "Inéquations simples", "Mise en équation", "Vérification d’une solution"]
+    },
+    {
+      title: "Proportionnalité",
+      items: ["Tableaux de proportionnalité", "Pourcentages", "Échelles", "Vitesse, distance, temps"]
+    },
+    {
+      title: "Géométrie",
+      items: ["Triangles", "Théorème de Pythagore", "Théorème de Thalès", "Angles", "Transformations"]
+    },
+    {
+      title: "Fonctions et statistiques",
+      items: ["Lire une fonction", "Graphiques", "Moyenne", "Médiane", "Probabilités simples"]
+    }
+  ]
+};
+
+const mathProgram = {
+  Primaire: [
+    {
+      title: "Nombres et calculs",
+      items: ["Lire et écrire les nombres", "Addition, soustraction, multiplication", "Division simple", "Calcul mental", "Problèmes à étapes"]
+    },
+    {
+      title: "Fractions et décimaux",
+      items: ["Comprendre une fraction", "Comparer des fractions", "Nombres décimaux", "Passer d’une fraction simple à un décimal"]
+    },
+    {
+      title: "Géométrie",
+      items: ["Droites, segments, angles", "Carré, rectangle, triangle, cercle", "Symétrie", "Périmètre et aire"]
+    },
+    {
+      title: "Mesures",
+      items: ["Longueurs", "Masses", "Durées", "Monnaie", "Conversions simples"]
+    },
+    {
+      title: "Organisation de données",
+      items: ["Lire un tableau", "Lire un graphique", "Résoudre un problème avec données"]
+    }
+  ],
+  Collège: [
+    {
+      title: "Calcul numérique",
+      items: ["Priorités opératoires", "Fractions", "Nombres relatifs", "Puissances", "Calcul littéral"]
+    },
+    {
+      title: "Équations et problèmes",
+      items: ["Équations du premier degré", "Inéquations simples", "Mise en équation", "Vérification d’une solution"]
+    },
+    {
+      title: "Proportionnalité",
+      items: ["Tableaux de proportionnalité", "Pourcentages", "Échelles", "Vitesse, distance, temps"]
+    },
+    {
+      title: "Géométrie",
+      items: ["Triangles", "Théorème de Pythagore", "Théorème de Thalès", "Angles", "Transformations"]
+    },
+    {
+      title: "Fonctions et statistiques",
+      items: ["Lire une fonction", "Graphiques", "Moyenne", "Médiane", "Probabilités simples"]
+    }
+  ]
+};
+
+const mathProgram = {
+  Primaire: [
+    {
+      title: "Nombres et calculs",
+      items: ["Lire et écrire les nombres", "Addition, soustraction, multiplication", "Division simple", "Calcul mental", "Problèmes à étapes"]
+    },
+    {
+      title: "Fractions et décimaux",
+      items: ["Comprendre une fraction", "Comparer des fractions", "Nombres décimaux", "Passer d’une fraction simple à un décimal"]
+    },
+    {
+      title: "Géométrie",
+      items: ["Droites, segments, angles", "Carré, rectangle, triangle, cercle", "Symétrie", "Périmètre et aire"]
+    },
+    {
+      title: "Mesures",
+      items: ["Longueurs", "Masses", "Durées", "Monnaie", "Conversions simples"]
+    },
+    {
+      title: "Organisation de données",
+      items: ["Lire un tableau", "Lire un graphique", "Résoudre un problème avec données"]
+    }
+  ],
+  Collège: [
+    {
+      title: "Calcul numérique",
+      items: ["Priorités opératoires", "Fractions", "Nombres relatifs", "Puissances", "Calcul littéral"]
+    },
+    {
+      title: "Équations et problèmes",
+      items: ["Équations du premier degré", "Inéquations simples", "Mise en équation", "Vérification d’une solution"]
+    },
+    {
+      title: "Proportionnalité",
+      items: ["Tableaux de proportionnalité", "Pourcentages", "Échelles", "Vitesse, distance, temps"]
+    },
+    {
+      title: "Géométrie",
+      items: ["Triangles", "Théorème de Pythagore", "Théorème de Thalès", "Angles", "Transformations"]
+    },
+    {
+      title: "Fonctions et statistiques",
+      items: ["Lire une fonction", "Graphiques", "Moyenne", "Médiane", "Probabilités simples"]
+    }
+  ]
+};
+
 const courseDatabase = {
   Primaire: {
     Mathématiques: {
@@ -390,6 +625,101 @@ export default function App() {
                   </div>
                   <p className="text-slate-700 leading-relaxed text-lg">{course.lesson}</p>
 
+                  {subject === "Mathématiques" && (
+                    <div className="mt-6 rounded-3xl bg-slate-950 text-white p-6">
+                      <p className="text-indigo-300 font-semibold mb-2">Programme complet de mathématiques</p>
+                      <h4 className="text-2xl font-black mb-5">Tous les chapitres disponibles</h4>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        {mathProgram[level].map((chapter) => (
+                          <div key={chapter.title} className="rounded-2xl bg-white/10 border border-white/10 p-5">
+                            <p className="font-bold mb-3">{chapter.title}</p>
+                            <ul className="space-y-2 text-sm text-white/70">
+                              {chapter.items.map((item) => (
+                                <li key={item}>✅ {item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {subject === "Mathématiques" && (
+                    <div className="mt-6 rounded-3xl bg-slate-950 text-white p-6">
+                      <p className="text-indigo-300 font-semibold mb-2">Programme complet de mathématiques</p>
+                      <h4 className="text-2xl font-black mb-5">Tous les chapitres disponibles</h4>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        {mathProgram[level].map((chapter) => (
+                          <div key={chapter.title} className="rounded-2xl bg-white/10 border border-white/10 p-5">
+                            <p className="font-bold mb-3">{chapter.title}</p>
+                            <ul className="space-y-2 text-sm text-white/70">
+                              {chapter.items.map((item) => (
+                                <li key={item}>✅ {item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {subject === "Mathématiques" && (
+                    <div className="mt-6 rounded-3xl bg-slate-950 text-white p-6">
+                      <p className="text-indigo-300 font-semibold mb-2">Programme complet de mathématiques</p>
+                      <h4 className="text-2xl font-black mb-5">Tous les chapitres disponibles</h4>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        {mathProgram[level].map((chapter) => (
+                          <div key={chapter.title} className="rounded-2xl bg-white/10 border border-white/10 p-5">
+                            <p className="font-bold mb-3">{chapter.title}</p>
+                            <ul className="space-y-2 text-sm text-white/70">
+                              {chapter.items.map((item) => (
+                                <li key={item}>✅ {item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {subject === "Mathématiques" && (
+                    <div className="mt-6 rounded-3xl bg-slate-950 text-white p-6">
+                      <p className="text-indigo-300 font-semibold mb-2">Programme complet de mathématiques</p>
+                      <h4 className="text-2xl font-black mb-5">Tous les chapitres disponibles</h4>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        {mathProgram[level].map((chapter) => (
+                          <div key={chapter.title} className="rounded-2xl bg-white/10 border border-white/10 p-5">
+                            <p className="font-bold mb-3">{chapter.title}</p>
+                            <ul className="space-y-2 text-sm text-white/70">
+                              {chapter.items.map((item) => (
+                                <li key={item}>✅ {item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {subject === "Mathématiques" && (
+                    <div className="mt-6 rounded-3xl bg-slate-950 text-white p-6">
+                      <p className="text-indigo-300 font-semibold mb-2">Programme complet de mathématiques</p>
+                      <h4 className="text-2xl font-black mb-5">Tous les chapitres disponibles</h4>
+                      <div className="grid md:grid-cols-2 gap-4">
+                        {mathProgram[level].map((chapter) => (
+                          <div key={chapter.title} className="rounded-2xl bg-white/10 border border-white/10 p-5">
+                            <p className="font-bold mb-3">{chapter.title}</p>
+                            <ul className="space-y-2 text-sm text-white/70">
+                              {chapter.items.map((item) => (
+                                <li key={item}>✅ {item}</li>
+                              ))}
+                            </ul>
+                          </div>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
                   <div className="mt-6 grid md:grid-cols-2 gap-4">
                     <div className="rounded-3xl bg-slate-100 p-5">
                       <p className="font-bold mb-3">Objectifs du cours</p>
@@ -426,236 +756,4 @@ export default function App() {
                     <p className="text-slate-600 text-sm">Le contenu s’ajuste au niveau choisi, au score de l’élève et à ses erreurs fréquentes.</p>
                   </div>
 
-                  <Button onClick={markCourseCompleted} className="mt-6 rounded-2xl h-12 px-6 bg-slate-950 hover:bg-slate-800 text-white w-full">
-                    ✅ Marquer ce cours comme terminé
-                  </Button>
-
-                  <p className="mt-3 text-sm text-slate-500">
-                    Progression : {completedCourses.includes(`${level}-${subject}`) ? "cours terminé" : "cours en cours"}
-                  </p>
-                </CardContent>
-              </Card>
-
-              <Card id="exercices" className="rounded-[2rem] bg-white/10 border-white/10 text-white backdrop-blur">
-                <CardContent className="p-8">
-                  <p className="text-indigo-300 font-semibold mb-2">Exercice</p>
-                  <h3 className="text-2xl font-black mb-4">À toi de jouer</h3>
-                  <p className="text-white/75 leading-relaxed">{course.exercise}</p>
-                  <div className="mt-6 space-y-3">
-                    <input
-                      value={userAnswer}
-                      onChange={(e) => setUserAnswer(e.target.value)}
-                      placeholder="Écris ta réponse..."
-                      className="w-full rounded-2xl bg-white/10 border border-white/10 px-4 py-3 outline-none"
-                    />
-
-                    <Button onClick={handleExerciseValidation} className="rounded-2xl bg-indigo-500 hover:bg-indigo-400 w-full text-white h-12">
-                      Valider ma réponse
-                    </Button>
-
-                    {exerciseResult && (
-                      <div className="rounded-2xl bg-white/10 p-4 text-sm text-white/80">
-                        {exerciseResult}
-                      </div>
-                    )}
-
-                    <Button onClick={() => setAnswerVisible(!answerVisible)} className="rounded-2xl bg-white text-slate-950 hover:bg-white/90 w-full">
-                    {answerVisible ? "Masquer la correction" : "Voir la correction"}
-                  </Button>
-                  {answerVisible && (
-                    <motion.div initial={{ opacity: 0, y: 8 }} animate={{ opacity: 1, y: 0 }} className="mt-5 rounded-2xl bg-emerald-500/15 border border-emerald-400/20 p-4">
-                      <p className="font-bold flex items-center gap-2"><CheckCircle2 className="h-4 w-4" /> Correction</p>
-                      <p className="text-sm text-white/75 mt-2">{course.answer}</p>
-                    </motion.div>
-                  )}
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </section>
-
-          <section id="evaluation" className="max-w-7xl mx-auto px-6 py-16 grid lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <p className="text-teal-300 font-semibold">Évaluation adaptative</p>
-              <h2 className="text-4xl font-black mt-2 mb-5">Un diagnostic précis pour chaque enfant</h2>
-              <p className="text-white/70 text-lg leading-relaxed">La plateforme analyse le niveau, ajuste la difficulté et propose un parcours personnalisé après chaque évaluation.</p>
-              <div className="mt-8 space-y-4">
-                {["Questions adaptées au niveau", "Correction immédiate", "Plan de révision personnalisé", "Suivi parent et élève"].map((item) => (
-                  <div key={item} className="flex items-center gap-3 text-white/80">
-                    <CheckCircle2 className="h-5 w-5 text-emerald-300" /> {item}
-                  </div>
-                ))}
-              </div>
-            </div>
-            <Card className="rounded-[2rem] bg-white text-slate-950 border-0 shadow-2xl">
-              <CardContent className="p-8">
-                <div className="flex items-center justify-between mb-6">
-                  <div>
-                    <p className="text-slate-500 text-sm">Score de simulation</p>
-                    <h3 className="text-3xl font-black">{score}%</h3>
-                  </div>
-                  <BarChart3 className="h-10 w-10" />
-                </div>
-                <input type="range" min="0" max="100" value={score} onChange={(e) => setScore(Number(e.target.value))} className="w-full" />
-                <div className="mt-6 rounded-3xl bg-slate-100 p-5">
-                  <p className="font-bold mb-2">Analyse IA</p>
-                  <p className="text-slate-600">{generateAdaptiveFeedback(score, level)}</p>
-                </div>
-                <p className="mt-5 text-sm text-slate-500">Objectif actuel : {course.evaluation}</p>
-              </CardContent>
-            </Card>
-          </section>
-
-          <section className="max-w-7xl mx-auto px-6 py-10">
-            <div className="grid md:grid-cols-3 gap-6">
-              <div className="rounded-[2rem] bg-gradient-to-br from-indigo-500 to-violet-600 p-8 shadow-2xl">
-                <p className="text-white/70">Temps d’apprentissage</p>
-                <h3 className="text-5xl font-black mt-3">124h</h3>
-                <p className="mt-4 text-white/80">Temps total travaillé cette année.</p>
-              </div>
-              <div className="rounded-[2rem] bg-gradient-to-br from-emerald-500 to-teal-600 p-8 shadow-2xl">
-                <p className="text-white/70">Exercices réussis</p>
-                <h3 className="text-5xl font-black mt-3">842</h3>
-                <p className="mt-4 text-white/80">Progression continue grâce à l’IA.</p>
-              </div>
-              <div className="rounded-[2rem] bg-gradient-to-br from-pink-500 to-fuchsia-600 p-8 shadow-2xl">
-                <p className="text-white/70">Badge actuel</p>
-                <h3 className="text-4xl font-black mt-3">Expert Junior</h3>
-                <p className="mt-4 text-white/80">Débloqué après plusieurs évaluations réussies.</p>
-              </div>
-            </div>
-          </section>
-
-          <section className="max-w-7xl mx-auto px-6 py-10">
-            <div className="rounded-[2.5rem] bg-gradient-to-r from-indigo-600 via-violet-600 to-fuchsia-600 p-10 shadow-2xl overflow-hidden relative">
-              <div className="absolute inset-0 opacity-20 bg-[radial-gradient(circle_at_top_right,white,transparent_35%)]" />
-              <div className="relative z-10 grid lg:grid-cols-2 gap-10 items-center">
-                <div>
-                  <p className="uppercase tracking-[0.3em] text-white/60 text-xs">Offre Premium</p>
-                  <h2 className="text-5xl font-black mt-4 leading-tight">Une expérience scolaire d’excellence.</h2>
-                  <p className="mt-6 text-lg text-white/80 leading-relaxed">
-                    Accès illimité aux cours IA, évaluations intelligentes, suivi parent, statistiques détaillées et accompagnement personnalisé.
-                  </p>
-                </div>
-                <div className="rounded-[2rem] bg-white text-slate-950 p-8 shadow-2xl">
-                  <p className="text-slate-500">Abonnement</p>
-                  <h3 className="text-6xl font-black mt-2">19€</h3>
-                  <p className="text-slate-500">par mois</p>
-                  <div className="mt-6 space-y-3">
-                    {[
-                      "Cours illimités",
-                      "IA adaptative avancée",
-                      "Suivi des parents",
-                      "Exercices personnalisés",
-                      "Accès mobile et tablette"
-                    ].map((item) => (
-                      <div key={item} className="flex items-center gap-3">
-                        <CheckCircle2 className="h-4 w-4" />
-                        <span>{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <Button className="w-full mt-8 rounded-2xl h-12 bg-slate-950 hover:bg-slate-800 text-white">
-                    Commencer maintenant
-                  </Button>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section id="securite" className="max-w-7xl mx-auto px-6 py-16">
-            <div className="rounded-[2.5rem] bg-white/10 border border-white/10 p-8 md:p-12 backdrop-blur grid lg:grid-cols-3 gap-8">
-              <div className="lg:col-span-2">
-                <p className="text-pink-300 font-semibold">Accès sécurisé</p>
-                <h2 className="text-4xl font-black mt-2">Espace enfant, parent et enseignant</h2>
-                <p className="text-white/70 mt-5 text-lg leading-relaxed">Connexion par email et mot de passe, profils séparés, suivi des progrès, historique des cours et recommandations personnalisées.</p>
-              </div>
-              <div className="rounded-[2rem] bg-slate-950/70 border border-white/10 p-6">
-                <Shield className="h-10 w-10 mb-5 text-emerald-300" />
-                <p className="font-bold text-xl">Sécurité premium</p>
-                <p className="text-white/60 mt-3 text-sm">Protection des comptes, accès privé et interface simple pour les familles.</p>
-              </div>
-            </div>
-          </section>
-        </main>
-
-        <footer className="max-w-7xl mx-auto px-6 py-10 text-white/45 text-sm flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
-          <p>© 2026 ÉduNova IA. Plateforme de soutien scolaire.</p>
-          <p>Primaire · Collège · Toutes matières · IA adaptative</p>
-        </footer>
-      </div>
-
-      {showDemo && (
-        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur flex items-center justify-center p-6">
-          <motion.div initial={{ opacity: 0, y: 20, scale: .96 }} animate={{ opacity: 1, y: 0, scale: 1 }} className="w-full max-w-3xl rounded-[2rem] bg-white text-slate-950 p-8 shadow-2xl">
-            <div className="flex items-center justify-between mb-7">
-              <div>
-                <p className="text-sm text-slate-500">Aperçu interactif</p>
-                <h2 className="text-3xl font-black">Démo élève</h2>
-              </div>
-              <button onClick={() => setShowDemo(false)} className="h-10 w-10 rounded-full bg-slate-100">×</button>
-            </div>
-            <div className="grid md:grid-cols-3 gap-4 mb-6">
-              <div className="rounded-3xl bg-slate-100 p-5">
-                <BookOpen className="h-7 w-7 mb-3" />
-                <p className="font-bold">Cours IA</p>
-                <p className="text-sm text-slate-600 mt-2">Le cours s’adapte au niveau sélectionné.</p>
-              </div>
-              <div className="rounded-3xl bg-slate-100 p-5">
-                <PenTool className="h-7 w-7 mb-3" />
-                <p className="font-bold">Exercice</p>
-                <p className="text-sm text-slate-600 mt-2">Une question est proposée avec correction.</p>
-              </div>
-              <div className="rounded-3xl bg-slate-100 p-5">
-                <BarChart3 className="h-7 w-7 mb-3" />
-                <p className="font-bold">Évaluation</p>
-                <p className="text-sm text-slate-600 mt-2">L’IA donne une recommandation personnalisée.</p>
-              </div>
-            </div>
-            <div className="rounded-3xl bg-slate-950 text-white p-6">
-              <p className="text-sm text-white/50">Exemple de parcours</p>
-              <h3 className="text-2xl font-black mt-1">{level} · {subject}</h3>
-              <p className="text-white/70 mt-3">{course.lesson}</p>
-              <div className="mt-5 rounded-2xl bg-white/10 p-4">
-                <p className="font-bold">Question rapide</p>
-                <p className="text-white/70 mt-2">{course.exercise}</p>
-              </div>
-            </div>
-          </motion.div>
-        </div>
-      )}
-
-      {showLogin && (
-        <div className="fixed inset-0 z-50 bg-slate-950/80 backdrop-blur flex items-center justify-center p-6">
-          <motion.div initial={{ opacity: 0, y: 20, scale: .96 }} animate={{ opacity: 1, y: 0, scale: 1 }} className="w-full max-w-md rounded-[2rem] bg-white text-slate-950 p-8 shadow-2xl">
-            <div className="flex items-center justify-between mb-7">
-              <div>
-                <p className="text-sm text-slate-500">Espace sécurisé</p>
-                <h2 className="text-3xl font-black">Connexion</h2>
-              </div>
-              <button onClick={() => setShowLogin(false)} className="h-10 w-10 rounded-full bg-slate-100">×</button>
-            </div>
-            <label className="text-sm font-semibold">Email</label>
-            <div className="mt-2 mb-4 rounded-2xl bg-slate-100 px-4 py-3 flex items-center gap-3">
-              <Mail className="h-4 w-4 text-slate-400" />
-              <input value={userEmail} onChange={(e) => setUserEmail(e.target.value)} placeholder="parent@email.com" className="bg-transparent outline-none w-full" />
-            </div>
-            <label className="text-sm font-semibold">Mot de passe</label>
-            <div className="mt-2 mb-6 rounded-2xl bg-slate-100 px-4 py-3 flex items-center gap-3">
-              <Lock className="h-4 w-4 text-slate-400" />
-              <input
-                type="password"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                placeholder="••••••••"
-                className="bg-transparent outline-none w-full"
-              />
-            </div>
-            <Button onClick={handleLogin} className="w-full rounded-2xl h-12 bg-slate-950 hover:bg-slate-800 text-white">Accéder au tableau de bord</Button>
-            <p className="text-xs text-slate-500 mt-4 text-center">Connexion sécurisée avec Supabase.</p>
-          </motion.div>
-        </div>
-      )}
-    </div>
-  );
-}
+                  <Button onClick={markCourseCompleted} className="mt-6 rounded-2xl h-12 px-6 bg-slate-950 hover:bg-slate-800 text-
