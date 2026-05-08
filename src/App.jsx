@@ -92,194 +92,6 @@ const mathProgram = {
   ]
 };
 
-const mathProgram = {
-  Primaire: [
-    {
-      title: "Nombres et calculs",
-      items: ["Lire et écrire les nombres", "Addition, soustraction, multiplication", "Division simple", "Calcul mental", "Problèmes à étapes"]
-    },
-    {
-      title: "Fractions et décimaux",
-      items: ["Comprendre une fraction", "Comparer des fractions", "Nombres décimaux", "Passer d’une fraction simple à un décimal"]
-    },
-    {
-      title: "Géométrie",
-      items: ["Droites, segments, angles", "Carré, rectangle, triangle, cercle", "Symétrie", "Périmètre et aire"]
-    },
-    {
-      title: "Mesures",
-      items: ["Longueurs", "Masses", "Durées", "Monnaie", "Conversions simples"]
-    },
-    {
-      title: "Organisation de données",
-      items: ["Lire un tableau", "Lire un graphique", "Résoudre un problème avec données"]
-    }
-  ],
-  Collège: [
-    {
-      title: "Calcul numérique",
-      items: ["Priorités opératoires", "Fractions", "Nombres relatifs", "Puissances", "Calcul littéral"]
-    },
-    {
-      title: "Équations et problèmes",
-      items: ["Équations du premier degré", "Inéquations simples", "Mise en équation", "Vérification d’une solution"]
-    },
-    {
-      title: "Proportionnalité",
-      items: ["Tableaux de proportionnalité", "Pourcentages", "Échelles", "Vitesse, distance, temps"]
-    },
-    {
-      title: "Géométrie",
-      items: ["Triangles", "Théorème de Pythagore", "Théorème de Thalès", "Angles", "Transformations"]
-    },
-    {
-      title: "Fonctions et statistiques",
-      items: ["Lire une fonction", "Graphiques", "Moyenne", "Médiane", "Probabilités simples"]
-    }
-  ]
-};
-
-const mathProgram = {
-  Primaire: [
-    {
-      title: "Nombres et calculs",
-      items: ["Lire et écrire les nombres", "Addition, soustraction, multiplication", "Division simple", "Calcul mental", "Problèmes à étapes"]
-    },
-    {
-      title: "Fractions et décimaux",
-      items: ["Comprendre une fraction", "Comparer des fractions", "Nombres décimaux", "Passer d’une fraction simple à un décimal"]
-    },
-    {
-      title: "Géométrie",
-      items: ["Droites, segments, angles", "Carré, rectangle, triangle, cercle", "Symétrie", "Périmètre et aire"]
-    },
-    {
-      title: "Mesures",
-      items: ["Longueurs", "Masses", "Durées", "Monnaie", "Conversions simples"]
-    },
-    {
-      title: "Organisation de données",
-      items: ["Lire un tableau", "Lire un graphique", "Résoudre un problème avec données"]
-    }
-  ],
-  Collège: [
-    {
-      title: "Calcul numérique",
-      items: ["Priorités opératoires", "Fractions", "Nombres relatifs", "Puissances", "Calcul littéral"]
-    },
-    {
-      title: "Équations et problèmes",
-      items: ["Équations du premier degré", "Inéquations simples", "Mise en équation", "Vérification d’une solution"]
-    },
-    {
-      title: "Proportionnalité",
-      items: ["Tableaux de proportionnalité", "Pourcentages", "Échelles", "Vitesse, distance, temps"]
-    },
-    {
-      title: "Géométrie",
-      items: ["Triangles", "Théorème de Pythagore", "Théorème de Thalès", "Angles", "Transformations"]
-    },
-    {
-      title: "Fonctions et statistiques",
-      items: ["Lire une fonction", "Graphiques", "Moyenne", "Médiane", "Probabilités simples"]
-    }
-  ]
-};
-
-const mathProgram = {
-  Primaire: [
-    {
-      title: "Nombres et calculs",
-      items: ["Lire et écrire les nombres", "Addition, soustraction, multiplication", "Division simple", "Calcul mental", "Problèmes à étapes"]
-    },
-    {
-      title: "Fractions et décimaux",
-      items: ["Comprendre une fraction", "Comparer des fractions", "Nombres décimaux", "Passer d’une fraction simple à un décimal"]
-    },
-    {
-      title: "Géométrie",
-      items: ["Droites, segments, angles", "Carré, rectangle, triangle, cercle", "Symétrie", "Périmètre et aire"]
-    },
-    {
-      title: "Mesures",
-      items: ["Longueurs", "Masses", "Durées", "Monnaie", "Conversions simples"]
-    },
-    {
-      title: "Organisation de données",
-      items: ["Lire un tableau", "Lire un graphique", "Résoudre un problème avec données"]
-    }
-  ],
-  Collège: [
-    {
-      title: "Calcul numérique",
-      items: ["Priorités opératoires", "Fractions", "Nombres relatifs", "Puissances", "Calcul littéral"]
-    },
-    {
-      title: "Équations et problèmes",
-      items: ["Équations du premier degré", "Inéquations simples", "Mise en équation", "Vérification d’une solution"]
-    },
-    {
-      title: "Proportionnalité",
-      items: ["Tableaux de proportionnalité", "Pourcentages", "Échelles", "Vitesse, distance, temps"]
-    },
-    {
-      title: "Géométrie",
-      items: ["Triangles", "Théorème de Pythagore", "Théorème de Thalès", "Angles", "Transformations"]
-    },
-    {
-      title: "Fonctions et statistiques",
-      items: ["Lire une fonction", "Graphiques", "Moyenne", "Médiane", "Probabilités simples"]
-    }
-  ]
-};
-
-const mathProgram = {
-  Primaire: [
-    {
-      title: "Nombres et calculs",
-      items: ["Lire et écrire les nombres", "Addition, soustraction, multiplication", "Division simple", "Calcul mental", "Problèmes à étapes"]
-    },
-    {
-      title: "Fractions et décimaux",
-      items: ["Comprendre une fraction", "Comparer des fractions", "Nombres décimaux", "Passer d’une fraction simple à un décimal"]
-    },
-    {
-      title: "Géométrie",
-      items: ["Droites, segments, angles", "Carré, rectangle, triangle, cercle", "Symétrie", "Périmètre et aire"]
-    },
-    {
-      title: "Mesures",
-      items: ["Longueurs", "Masses", "Durées", "Monnaie", "Conversions simples"]
-    },
-    {
-      title: "Organisation de données",
-      items: ["Lire un tableau", "Lire un graphique", "Résoudre un problème avec données"]
-    }
-  ],
-  Collège: [
-    {
-      title: "Calcul numérique",
-      items: ["Priorités opératoires", "Fractions", "Nombres relatifs", "Puissances", "Calcul littéral"]
-    },
-    {
-      title: "Équations et problèmes",
-      items: ["Équations du premier degré", "Inéquations simples", "Mise en équation", "Vérification d’une solution"]
-    },
-    {
-      title: "Proportionnalité",
-      items: ["Tableaux de proportionnalité", "Pourcentages", "Échelles", "Vitesse, distance, temps"]
-    },
-    {
-      title: "Géométrie",
-      items: ["Triangles", "Théorème de Pythagore", "Théorème de Thalès", "Angles", "Transformations"]
-    },
-    {
-      title: "Fonctions et statistiques",
-      items: ["Lire une fonction", "Graphiques", "Moyenne", "Médiane", "Probabilités simples"]
-    }
-  ]
-};
-
 const courseDatabase = {
   Primaire: {
     Mathématiques: {
@@ -624,7 +436,6 @@ export default function App() {
                     </div>
                   </div>
                   <p className="text-slate-700 leading-relaxed text-lg">{course.lesson}</p>
-
                   {subject === "Mathématiques" && (
                     <div className="mt-6 rounded-3xl bg-slate-950 text-white p-6">
                       <p className="text-indigo-300 font-semibold mb-2">Programme complet de mathématiques</p>
@@ -643,7 +454,6 @@ export default function App() {
                       </div>
                     </div>
                   )}
-
                   {subject === "Mathématiques" && (
                     <div className="mt-6 rounded-3xl bg-slate-950 text-white p-6">
                       <p className="text-indigo-300 font-semibold mb-2">Programme complet de mathématiques</p>
@@ -662,7 +472,6 @@ export default function App() {
                       </div>
                     </div>
                   )}
-
                   {subject === "Mathématiques" && (
                     <div className="mt-6 rounded-3xl bg-slate-950 text-white p-6">
                       <p className="text-indigo-300 font-semibold mb-2">Programme complet de mathématiques</p>
@@ -681,7 +490,6 @@ export default function App() {
                       </div>
                     </div>
                   )}
-
                   {subject === "Mathématiques" && (
                     <div className="mt-6 rounded-3xl bg-slate-950 text-white p-6">
                       <p className="text-indigo-300 font-semibold mb-2">Programme complet de mathématiques</p>
@@ -700,7 +508,6 @@ export default function App() {
                       </div>
                     </div>
                   )}
-
                   {subject === "Mathématiques" && (
                     <div className="mt-6 rounded-3xl bg-slate-950 text-white p-6">
                       <p className="text-indigo-300 font-semibold mb-2">Programme complet de mathématiques</p>
