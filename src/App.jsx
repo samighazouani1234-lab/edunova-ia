@@ -24,14 +24,14 @@ const subjects = [
 ];
 
 const fallbackVideos = {
-  "Nombres et calculs": "https://www.youtube.com/embed/H14bBuluwB8",
-  "Fractions et décimaux": "https://www.youtube.com/embed/m2rT4z_5d7Y",
-  "Géométrie et mesures": "https://www.youtube.com/embed/oe33zXG4lWU",
-  "Multiplications et divisions": "https://www.youtube.com/embed/QsX9wD8lQ8Y",
-  "Grammaire": "https://www.youtube.com/embed/0mL0w8n2M8k",
-  "Lecture compréhension": "https://www.youtube.com/embed/6x1WUnZVxjA",
-  "Conjugaison": "https://www.youtube.com/embed/WP0xk8gJ8fY",
-  "Orthographe": "https://www.youtube.com/embed/QB5k5lLq4mM"
+  "Nombres et calculs": "https://www.youtube-nocookie.com/embed/8mcTsyV56Zw",
+  "Fractions et décimaux": "https://www.youtube-nocookie.com/embed/p33K1B0VhWk",
+  "Géométrie et mesures": "https://www.youtube-nocookie.com/embed/dUqv7G7-4W8",
+  "Multiplications et divisions": "https://www.youtube-nocookie.com/embed/NybHckSEQBI",
+  "Grammaire": "https://www.youtube-nocookie.com/embed/5yQio1bTf5E",
+  "Lecture compréhension": "https://www.youtube-nocookie.com/embed/Zilvl7Gd51A",
+  "Conjugaison": "https://www.youtube-nocookie.com/embed/5yQio1bTf5E",
+  "Orthographe": "https://www.youtube-nocookie.com/embed/0W0ZK8f8Mto"
 };
 
 const courseData = {
