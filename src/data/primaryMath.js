@@ -1,155 +1,268 @@
+# src/data/primaryMath.js
+
+```js
 const primaryMath = [
   {
-    title: "Additions et soustractions",
-    video: "https://www.youtube.com/embed/2o7W7Yz5xxQ",
+    title: "Nombres et calculs",
     lesson:
-      "Maîtriser les additions et soustractions avec retenues et résoudre des problèmes simples.",
+      "Comprendre les nombres, comparer, ranger et effectuer des calculs simples.",
+    video: "https://www.youtube-nocookie.com/embed/8mcTsyV56Zw",
+    objectives: [
+      "Lire les nombres",
+      "Comparer les nombres",
+      "Additionner",
+      "Soustraire",
+    ],
+    exercises: [
+      {
+        question: "Quel nombre est le plus grand : 45 ou 54 ?",
+        answer: "54",
+      },
+      {
+        question: "Calcule : 25 + 17",
+        answer: "42",
+      },
+      {
+        question: "Calcule : 80 - 35",
+        answer: "45",
+      },
+    ],
+  },
+
+  {
+    title: "Additions et soustractions",
+    lesson:
+      "Poser des additions et des soustractions avec retenues.",
+    video: "https://www.youtube-nocookie.com/embed/NybHckSEQBI",
     objectives: [
       "Poser une addition",
       "Poser une soustraction",
       "Utiliser les retenues",
-      "Vérifier un calcul",
     ],
     exercises: [
       {
-        question: "Calcule : 345 + 127",
-        answer: "472",
-        choices: ["472", "462", "482", "452"],
+        question: "Calcule : 345 + 128",
+        answer: "473",
       },
       {
         question: "Calcule : 700 - 248",
         answer: "452",
-        choices: ["452", "442", "462", "552"],
       },
       {
-        question: "Calcule : 980 + 15",
-        answer: "995",
-        choices: ["995", "985", "1005", "975"],
+        question: "Calcule : 90 + 15",
+        answer: "105",
       },
     ],
   },
+
   {
     title: "Multiplications et divisions",
-    video: "https://www.youtube.com/embed/Y0k9bJ8f9nE",
     lesson:
-      "Comprendre les multiplications et divisions et les utiliser dans des situations concrètes.",
+      "Utiliser les tables et comprendre les divisions simples.",
+    video: "https://www.youtube-nocookie.com/embed/NybHckSEQBI",
     objectives: [
-      "Tables de multiplication",
-      "Division simple",
-      "Résolution de problèmes",
-      "Calcul mental",
-    ],
-    exercises: [
-      {
-        question: "Calcule : 9 × 6",
-        answer: "54",
-        choices: ["54", "56", "48", "64"],
-      },
-      {
-        question: "Calcule : 72 ÷ 8",
-        answer: "9",
-        choices: ["9", "8", "6", "12"],
-      },
-      {
-        question: "Combien font 7 × 7 ?",
-        answer: "49",
-        choices: ["49", "56", "42", "36"],
-      },
-    ],
-  },
-  {
-    title: "Nombres et calculs",
-    video: "https://www.youtube.com/embed/GPZhUzgT2dM",
-    lesson:
-      "Lire les nombres, poser les opérations et résoudre des problèmes simples.",
-    objectives: [
-      "Lire les nombres",
-      "Additionner",
-      "Soustraire",
+      "Connaître les tables",
       "Multiplier",
-      "Résoudre un problème",
+      "Diviser",
     ],
     exercises: [
       {
-        question: "Calcule : 245 + 138",
-        answer: "383",
-        choices: ["383", "373", "385", "393"],
-      },
-      {
-        question: "Calcule : 500 - 125",
-        answer: "375",
-        choices: ["375", "365", "475", "350"],
-      },
-      {
-        question: "Calcule : 8 × 7",
+        question: "Combien font 7 × 8 ?",
         answer: "56",
-        choices: ["56", "54", "49", "64"],
       },
       {
-        question: "Calcule : 96 ÷ 12",
-        answer: "8",
-        choices: ["8", "6", "9", "12"],
+        question: "Combien font 72 ÷ 8 ?",
+        answer: "9",
+      },
+      {
+        question: "Combien font 9 × 9 ?",
+        answer: "81",
       },
     ],
   },
+
   {
     title: "Fractions et décimaux",
-    video: "https://www.youtube.com/embed/Ryy9nmQxeY0",
     lesson:
-      "Comprendre les fractions, les parts d’un tout et les nombres décimaux.",
+      "Comprendre les fractions simples et les nombres décimaux.",
+    video: "https://www.youtube-nocookie.com/embed/p33K1B0VhWk",
     objectives: [
       "Lire une fraction",
-      "Comparer",
-      "Décimaux",
-      "Utiliser dans un problème",
+      "Comparer des fractions",
+      "Lire un décimal",
     ],
     exercises: [
       {
         question: "Quelle fraction représente une moitié ?",
         answer: "1/2",
-        choices: ["1/2", "2/1", "1/3", "3/2"],
       },
       {
-        question: "Dans 3/4, combien de parts sont prises ?",
-        answer: "3",
-        choices: ["3", "4", "2", "1"],
+        question: "Quel nombre est décimal : 2,5 ou 25 ?",
+        answer: "2,5",
       },
       {
-        question: "0,5 représente quelle fraction simple ?",
-        answer: "1/2",
-        choices: ["1/2", "1/4", "2/3", "3/4"],
+        question: "Combien font 0,5 + 0,5 ?",
+        answer: "1",
       },
     ],
   },
+
   {
     title: "Géométrie et mesures",
-    video: "https://www.youtube.com/embed/bX7Bt3Cm3xc",
     lesson:
-      "Reconnaître les figures, mesurer et calculer des périmètres simples.",
+      "Reconnaître les formes géométriques et utiliser les mesures.",
+    video: "https://www.youtube-nocookie.com/embed/dUqv7G7-4W8",
     objectives: [
-      "Figures",
-      "Angles",
-      "Symétrie",
-      "Longueurs",
+      "Reconnaître les formes",
+      "Mesurer une longueur",
+      "Calculer un périmètre",
     ],
     exercises: [
       {
-        question: "Combien de côtés possède un rectangle ?",
+        question: "Combien de côtés possède un carré ?",
         answer: "4",
-        choices: ["4", "3", "5", "6"],
       },
       {
-        question: "Combien d’angles a un triangle ?",
+        question: "Quelle forme possède 3 côtés ?",
+        answer: "triangle",
+      },
+      {
+        question: "Quel instrument utilise-t-on pour mesurer ?",
+        answer: "règle",
+      },
+    ],
+  },
+
+  {
+    title: "Tables de multiplication",
+    lesson:
+      "Apprendre et mémoriser les tables de multiplication.",
+    video: "https://www.youtube-nocookie.com/embed/NybHckSEQBI",
+    objectives: [
+      "Réciter les tables",
+      "Calcul mental",
+      "Multiplier rapidement",
+    ],
+    exercises: [
+      {
+        question: "Combien font 6 × 7 ?",
+        answer: "42",
+      },
+      {
+        question: "Combien font 8 × 4 ?",
+        answer: "32",
+      },
+      {
+        question: "Combien font 5 × 9 ?",
+        answer: "45",
+      },
+    ],
+  },
+
+  {
+    title: "Problèmes mathématiques",
+    lesson:
+      "Résoudre des situations de la vie quotidienne avec les mathématiques.",
+    video: "https://www.youtube-nocookie.com/embed/8mcTsyV56Zw",
+    objectives: [
+      "Lire un problème",
+      "Choisir la bonne opération",
+      "Vérifier le résultat",
+    ],
+    exercises: [
+      {
+        question: "Lina a 12 pommes et en mange 4. Combien lui reste-t-il ?",
+        answer: "8",
+      },
+      {
+        question: "Paul achète 3 paquets de 5 bonbons. Combien de bonbons ?",
+        answer: "15",
+      },
+      {
+        question: "Il y a 24 élèves répartis en 6 groupes. Combien par groupe ?",
+        answer: "4",
+      },
+    ],
+  },
+
+  {
+    title: "Heures et durées",
+    lesson:
+      "Lire l’heure et calculer des durées simples.",
+    video: "https://www.youtube-nocookie.com/embed/dUqv7G7-4W8",
+    objectives: [
+      "Lire une horloge",
+      "Comprendre les minutes",
+      "Calculer une durée",
+    ],
+    exercises: [
+      {
+        question: "Combien y a-t-il de minutes dans une heure ?",
+        answer: "60",
+      },
+      {
+        question: "Quelle heure vient après 14h30 ?",
+        answer: "14h31",
+      },
+      {
+        question: "Une demi-heure correspond à combien de minutes ?",
+        answer: "30",
+      },
+    ],
+  },
+
+  {
+    title: "Monnaie et achats",
+    lesson:
+      "Utiliser l’argent et rendre la monnaie.",
+    video: "https://www.youtube-nocookie.com/embed/8mcTsyV56Zw",
+    objectives: [
+      "Reconnaître les pièces",
+      "Calculer un prix",
+      "Rendre la monnaie",
+    ],
+    exercises: [
+      {
+        question: "Si un jouet coûte 8€ et tu paies 10€, combien reçoit-on ?",
+        answer: "2",
+      },
+      {
+        question: "Combien font 5€ + 2€ ?",
+        answer: "7",
+      },
+      {
+        question: "Quel billet vaut le plus : 5€ ou 20€ ?",
+        answer: "20€",
+      },
+    ],
+  },
+
+  {
+    title: "Symétrie et formes",
+    lesson:
+      "Découvrir la symétrie et reconnaître les figures géométriques.",
+    video: "https://www.youtube-nocookie.com/embed/dUqv7G7-4W8",
+    objectives: [
+      "Comprendre la symétrie",
+      "Tracer une figure",
+      "Observer les formes",
+    ],
+    exercises: [
+      {
+        question: "Un papillon est-il symétrique ?",
+        answer: "oui",
+      },
+      {
+        question: "Combien de côtés possède un triangle ?",
         answer: "3",
-        choices: ["3", "4", "2", "5"],
       },
       {
-        question: "Combien de centimètres dans 1 mètre ?",
-        answer: "100",
-        choices: ["100", "10", "1000", "50"],
+        question: "Quelle figure est ronde ?",
+        answer: "cercle",
       },
     ],
   },
 ];
 
 export default primaryMath;
+```
