@@ -1,251 +1,264 @@
 const primaryMath = [
-  {
-    title: "Nombres et calculs",
-    lesson:
-      "Comprendre les nombres, comparer, ranger et effectuer des calculs simples.",
-    video: "https://www.youtube-nocookie.com/embed/8mcTsyV56Zw",
-    objectives: [
-      "Lire les nombres",
-      "Comparer les nombres",
-      "Additionner",
-      "Soustraire"
-    ],
-    exercises: [
-      {
-        question: "Quel nombre est le plus grand : 45 ou 54 ?",
-        answer: "54"
-      },
-      {
-        question: "Combien font 12 + 8 ?",
-        answer: "20"
-      },
-      {
-        question: "Combien font 25 - 7 ?",
-        answer: "18"
-      },
-      {
-        question: "Quel nombre vient après 99 ?",
-        answer: "100"
-      }
-    ]
-  },
+{
+title: "Nombres et calculs",
+lesson:
+"Comprendre les nombres, comparer, ranger et effectuer des calculs simples.",
+video: "[https://www.youtube-nocookie.com/embed/8mcTsyV56Zw](https://www.youtube-nocookie.com/embed/8mcTsyV56Zw)",
+objectives: [
+"Lire les nombres",
+"Comparer les nombres",
+"Additionner",
+"Soustraire",
+],
+exercises: [
+{
+question: "Quel nombre est le plus grand : 45 ou 54 ?",
+answer: "54",
+},
+{
+question: "Calcule : 25 + 17",
+answer: "42",
+},
+{
+question: "Calcule : 80 - 35",
+answer: "45",
+},
+],
+},
 
-  {
-    title: "Additions et soustractions",
-    lesson:
-      "Maîtriser les additions et soustractions avec retenues et résoudre des problèmes simples.",
-    video: "https://www.youtube-nocookie.com/embed/4xYVq3R6m1M",
-    objectives: [
-      "Poser une addition",
-      "Poser une soustraction",
-      "Utiliser les retenues",
-      "Vérifier un calcul"
-    ],
-    exercises: [
-      {
-        question: "Combien font 145 + 26 ?",
-        answer: "171"
-      },
-      {
-        question: "Combien font 300 - 125 ?",
-        answer: "175"
-      },
-      {
-        question: "Paul a 50 billes et en perd 18. Combien lui reste-t-il ?",
-        answer: "32"
-      },
-      {
-        question: "Combien font 89 + 11 ?",
-        answer: "100"
-      }
-    ]
-  },
+{
+title: "Additions et soustractions",
+lesson:
+"Poser des additions et des soustractions avec retenues.",
+video: "[https://www.youtube-nocookie.com/embed/NybHckSEQBI](https://www.youtube-nocookie.com/embed/NybHckSEQBI)",
+objectives: [
+"Poser une addition",
+"Poser une soustraction",
+"Utiliser les retenues",
+],
+exercises: [
+{
+question: "Calcule : 345 + 128",
+answer: "473",
+},
+{
+question: "Calcule : 700 - 248",
+answer: "452",
+},
+{
+question: "Calcule : 90 + 15",
+answer: "105",
+},
+],
+},
 
-  {
-    title: "Multiplications et divisions",
-    lesson:
-      "Comprendre les multiplications et divisions et les utiliser dans des situations concrètes.",
-    video: "https://www.youtube-nocookie.com/embed/NybHckSEQBI",
-    objectives: [
-      "Tables de multiplication",
-      "Division simple",
-      "Résolution de problèmes",
-      "Calcul mental"
-    ],
-    exercises: [
-      {
-        question: "Combien font 6 × 7 ?",
-        answer: "42"
-      },
-      {
-        question: "Combien font 56 ÷ 8 ?",
-        answer: "7"
-      },
-      {
-        question: "Une boîte contient 5 bonbons. Combien de bonbons dans 4 boîtes ?",
-        answer: "20"
-      },
-      {
-        question: "Combien font 9 × 9 ?",
-        answer: "81"
-      }
-    ]
-  },
+{
+title: "Multiplications et divisions",
+lesson:
+"Utiliser les tables et comprendre les divisions simples.",
+video: "[https://www.youtube-nocookie.com/embed/NybHckSEQBI](https://www.youtube-nocookie.com/embed/NybHckSEQBI)",
+objectives: [
+"Connaître les tables",
+"Multiplier",
+"Diviser",
+],
+exercises: [
+{
+question: "Combien font 7 × 8 ?",
+answer: "56",
+},
+{
+question: "Combien font 72 ÷ 8 ?",
+answer: "9",
+},
+{
+question: "Combien font 9 × 9 ?",
+answer: "81",
+},
+],
+},
 
-  {
-    title: "Fractions et décimaux",
-    lesson:
-      "Comprendre les fractions, les parts d’un tout et les nombres décimaux.",
-    video: "https://www.youtube-nocookie.com/embed/p33K1B0VhWk",
-    objectives: [
-      "Lire une fraction",
-      "Comparer",
-      "Décimaux",
-      "Utiliser dans un problème"
-    ],
-    exercises: [
-      {
-        question: "Quelle fraction représente une moitié ?",
-        answer: "1/2"
-      },
-      {
-        question: "Dans 3/4, combien de parts sont prises ?",
-        answer: "3"
-      },
-      {
-        question: "Quel est le plus grand : 0,5 ou 0,8 ?",
-        answer: "0,8"
-      },
-      {
-        question: "Combien font 0,2 + 0,3 ?",
-        answer: "0,5"
-      }
-    ]
-  },
+{
+title: "Fractions et décimaux",
+lesson:
+"Comprendre les fractions simples et les nombres décimaux.",
+video: "[https://www.youtube-nocookie.com/embed/p33K1B0VhWk](https://www.youtube-nocookie.com/embed/p33K1B0VhWk)",
+objectives: [
+"Lire une fraction",
+"Comparer des fractions",
+"Lire un décimal",
+],
+exercises: [
+{
+question: "Quelle fraction représente une moitié ?",
+answer: "1/2",
+},
+{
+question: "Quel nombre est décimal : 2,5 ou 25 ?",
+answer: "2,5",
+},
+{
+question: "Combien font 0,5 + 0,5 ?",
+answer: "1",
+},
+],
+},
 
-  {
-    title: "Géométrie et mesures",
-    lesson:
-      "Reconnaître les figures, mesurer et calculer des périmètres simples.",
-    video: "https://www.youtube-nocookie.com/embed/dUqv7G7-4W8",
-    objectives: [
-      "Figures",
-      "Angles",
-      "Symétrie",
-      "Longueurs"
-    ],
-    exercises: [
-      {
-        question: "Combien de côtés a un triangle ?",
-        answer: "3"
-      },
-      {
-        question: "Combien d’angles a un carré ?",
-        answer: "4"
-      },
-      {
-        question: "Quel instrument utilise-t-on pour mesurer une longueur ?",
-        answer: "règle"
-      },
-      {
-        question: "Combien de côtés a un rectangle ?",
-        answer: "4"
-      }
-    ]
-  },
+{
+title: "Géométrie et mesures",
+lesson:
+"Reconnaître les formes géométriques et utiliser les mesures.",
+video: "[https://www.youtube-nocookie.com/embed/dUqv7G7-4W8](https://www.youtube-nocookie.com/embed/dUqv7G7-4W8)",
+objectives: [
+"Reconnaître les formes",
+"Mesurer une longueur",
+"Calculer un périmètre",
+],
+exercises: [
+{
+question: "Combien de côtés possède un carré ?",
+answer: "4",
+},
+{
+question: "Quelle forme possède 3 côtés ?",
+answer: "triangle",
+},
+{
+question: "Quel instrument utilise-t-on pour mesurer ?",
+answer: "règle",
+},
+],
+},
 
-  {
-    title: "Problèmes et logique",
-    lesson:
-      "Résoudre des problèmes simples et développer le raisonnement logique.",
-    video: "https://www.youtube-nocookie.com/embed/5s8N7R1xP8Q",
-    objectives: [
-      "Lire une consigne",
-      "Choisir l’opération",
-      "Résoudre un problème",
-      "Vérifier sa réponse"
-    ],
-    exercises: [
-      {
-        question: "Marie a 12 pommes et en donne 5. Combien lui reste-t-il ?",
-        answer: "7"
-      },
-      {
-        question: "Il y a 4 sacs avec 3 billes chacun. Combien de billes au total ?",
-        answer: "12"
-      },
-      {
-        question: "Quel nombre manque : 2, 4, 6, __ ?",
-        answer: "8"
-      },
-      {
-        question: "Un bus transporte 20 élèves et 5 descendent. Combien restent dans le bus ?",
-        answer: "15"
-      }
-    ]
-  },
+{
+title: "Tables de multiplication",
+lesson:
+"Apprendre et mémoriser les tables de multiplication.",
+video: "[https://www.youtube-nocookie.com/embed/NybHckSEQBI](https://www.youtube-nocookie.com/embed/NybHckSEQBI)",
+objectives: [
+"Réciter les tables",
+"Calcul mental",
+"Multiplier rapidement",
+],
+exercises: [
+{
+question: "Combien font 6 × 7 ?",
+answer: "42",
+},
+{
+question: "Combien font 8 × 4 ?",
+answer: "32",
+},
+{
+question: "Combien font 5 × 9 ?",
+answer: "45",
+},
+],
+},
 
-  {
-    title: "Temps et monnaie",
-    lesson:
-      "Lire l’heure, utiliser la monnaie et résoudre des situations de la vie quotidienne.",
-    video: "https://www.youtube-nocookie.com/embed/uW8P4h9mJ8A",
-    objectives: [
-      "Lire l’heure",
-      "Reconnaître les pièces",
-      "Calculer une somme",
-      "Résoudre un achat"
-    ],
-    exercises: [
-      {
-        question: "Combien y a-t-il de minutes dans une heure ?",
-        answer: "60"
-      },
-      {
-        question: "Quelle pièce vaut le plus : 1€ ou 2€ ?",
-        answer: "2€"
-      },
-      {
-        question: "Si un jouet coûte 8€ et que tu donnes 10€, combien rends-t-on ?",
-        answer: "2"
-      },
-      {
-        question: "Combien y a-t-il d’heures dans une journée ?",
-        answer: "24"
-      }
-    ]
-  },
+{
+title: "Problèmes mathématiques",
+lesson:
+"Résoudre des situations de la vie quotidienne avec les mathématiques.",
+video: "[https://www.youtube-nocookie.com/embed/8mcTsyV56Zw](https://www.youtube-nocookie.com/embed/8mcTsyV56Zw)",
+objectives: [
+"Lire un problème",
+"Choisir la bonne opération",
+"Vérifier le résultat",
+],
+exercises: [
+{
+question: "Lina a 12 pommes et en mange 4. Combien lui reste-t-il ?",
+answer: "8",
+},
+{
+question: "Paul achète 3 paquets de 5 bonbons. Combien de bonbons ?",
+answer: "15",
+},
+{
+question: "Il y a 24 élèves répartis en 6 groupes. Combien par groupe ?",
+answer: "4",
+},
+],
+},
 
-  {
-    title: "Grandeurs et mesures",
-    lesson:
-      "Mesurer des longueurs, masses et capacités avec les bonnes unités.",
-    video: "https://www.youtube-nocookie.com/embed/yW8R8nP4M0s",
-    objectives: [
-      "Mesurer une longueur",
-      "Comparer des masses",
-      "Utiliser les unités",
-      "Lire une mesure"
-    ],
-    exercises: [
-      {
-        question: "Quelle unité utilise-t-on pour mesurer une longueur ?",
-        answer: "mètre"
-      },
-      {
-        question: "Quel est le plus lourd : 1 kg ou 500 g ?",
-        answer: "1 kg"
-      },
-      {
-        question: "Combien y a-t-il de centimètres dans 1 mètre ?",
-        answer: "100"
-      },
-      {
-        question: "Quelle unité utilise-t-on pour mesurer un liquide ?",
-        answer: "litre"
-      }
-    ]
-  }
+{
+title: "Heures et durées",
+lesson:
+"Lire l’heure et calculer des durées simples.",
+video: "[https://www.youtube-nocookie.com/embed/dUqv7G7-4W8](https://www.youtube-nocookie.com/embed/dUqv7G7-4W8)",
+objectives: [
+"Lire une horloge",
+"Comprendre les minutes",
+"Calculer une durée",
+],
+exercises: [
+{
+question: "Combien y a-t-il de minutes dans une heure ?",
+answer: "60",
+},
+{
+question: "Quelle heure vient après 14h30 ?",
+answer: "14h31",
+},
+{
+question: "Une demi-heure correspond à combien de minutes ?",
+answer: "30",
+},
+],
+},
+
+{
+title: "Monnaie et achats",
+lesson:
+"Utiliser l’argent et rendre la monnaie.",
+video: "[https://www.youtube-nocookie.com/embed/8mcTsyV56Zw](https://www.youtube-nocookie.com/embed/8mcTsyV56Zw)",
+objectives: [
+"Reconnaître les pièces",
+"Calculer un prix",
+"Rendre la monnaie",
+],
+exercises: [
+{
+question: "Si un jouet coûte 8€ et tu paies 10€, combien reçoit-on ?",
+answer: "2",
+},
+{
+question: "Combien font 5€ + 2€ ?",
+answer: "7",
+},
+{
+question: "Quel billet vaut le plus : 5€ ou 20€ ?",
+answer: "20€",
+},
+],
+},
+
+{
+title: "Symétrie et formes",
+lesson:
+"Découvrir la symétrie et reconnaître les figures géométriques.",
+video: "[https://www.youtube-nocookie.com/embed/dUqv7G7-4W8](https://www.youtube-nocookie.com/embed/dUqv7G7-4W8)",
+objectives: [
+"Comprendre la symétrie",
+"Tracer une figure",
+"Observer les formes",
+],
+exercises: [
+{
+question: "Un papillon est-il symétrique ?",
+answer: "oui",
+},
+{
+question: "Combien de côtés possède un triangle ?",
+answer: "3",
+},
+{
+question: "Quelle figure est ronde ?",
+answer: "cercle",
+},
+],
+},
 ];
 
 export default primaryMath;
