@@ -1,5 +1,63 @@
 const primaryMath = [
   {
+    title: "Additions et soustractions",
+    video: "https://www.youtube.com/embed/2o7W7Yz5xxQ",
+    lesson:
+      "Maîtriser les additions et soustractions avec retenues et résoudre des problèmes simples.",
+    objectives: [
+      "Poser une addition",
+      "Poser une soustraction",
+      "Utiliser les retenues",
+      "Vérifier un calcul",
+    ],
+    exercises: [
+      {
+        question: "Calcule : 345 + 127",
+        answer: "472",
+        choices: ["472", "462", "482", "452"],
+      },
+      {
+        question: "Calcule : 700 - 248",
+        answer: "452",
+        choices: ["452", "442", "462", "552"],
+      },
+      {
+        question: "Calcule : 980 + 15",
+        answer: "995",
+        choices: ["995", "985", "1005", "975"],
+      },
+    ],
+  },
+  {
+    title: "Multiplications et divisions",
+    video: "https://www.youtube.com/embed/Y0k9bJ8f9nE",
+    lesson:
+      "Comprendre les multiplications et divisions et les utiliser dans des situations concrètes.",
+    objectives: [
+      "Tables de multiplication",
+      "Division simple",
+      "Résolution de problèmes",
+      "Calcul mental",
+    ],
+    exercises: [
+      {
+        question: "Calcule : 9 × 6",
+        answer: "54",
+        choices: ["54", "56", "48", "64"],
+      },
+      {
+        question: "Calcule : 72 ÷ 8",
+        answer: "9",
+        choices: ["9", "8", "6", "12"],
+      },
+      {
+        question: "Combien font 7 × 7 ?",
+        answer: "49",
+        choices: ["49", "56", "42", "36"],
+      },
+    ],
+  },
+  {
     title: "Nombres et calculs",
     video: "https://www.youtube.com/embed/GPZhUzgT2dM",
     lesson:
