@@ -2,18 +2,18 @@ import React, { useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { supabase } from "./supabase";
 
-import primaryMath from "./data/primaryMath";
-import collegeMath from "./data/collegeMath";
-import primaryFrench from "./data/primaryFrench";
-import collegeFrench from "./data/collegeFrench";
-import primaryEnglish from "./data/primaryEnglish";
-import collegeEnglish from "./data/collegeEnglish";
-import primaryScience from "./data/primaryScience";
-import collegeScience from "./data/collegeScience";
-import primaryHistory from "./data/primaryHistory";
-import collegeHistory from "./data/collegeHistory";
-import primaryCulture from "./data/primaryCulture";
-import collegeCulture from "./data/collegeCulture";
+import primaryMath from "./data/primaryMath.js";
+import collegeMath from "./data/collegeMath.js";
+import primaryFrench from "./data/primaryFrench.js";
+import collegeFrench from "./data/collegeFrench.js";
+import primaryEnglish from "./data/primaryEnglish.js";
+import collegeEnglish from "./data/collegeEnglish.js";
+import primaryScience from "./data/primaryScience.js";
+import collegeScience from "./data/collegeScience.js";
+import primaryHistory from "./data/primaryHistory.js";
+import collegeHistory from "./data/collegeHistory.js";
+import primaryCulture from "./data/primaryCulture.js";
+import collegeCulture from "./data/collegeCulture.js";
 
 const Button = ({ children, className = "", ...props }) => (
   <button
@@ -77,7 +77,7 @@ function normalize(value) {
     .toLowerCase()
     .trim()
     .normalize("NFD")
-    .replace(/[̀-ͯ]/g, "")
+    .replace(/[\u0300-\u036f]/g, "")
     .replace(/[.!?]/g, "");
 }
 
