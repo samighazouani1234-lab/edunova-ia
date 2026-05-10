@@ -3,7 +3,7 @@ const primaryMath = [
 title: "Nombres et calculs",
 lesson:
 "Comprendre les nombres, comparer, ranger et effectuer des calculs simples.",
-video: "[https://www.youtube-nocookie.com/embed/8mcTsyV56Zw](https://www.youtube-nocookie.com/embed/8mcTsyV56Zw)",
+video: "",
 objectives: [
 "Lire les nombres",
 "Comparer les nombres",
@@ -30,7 +30,7 @@ answer: "45",
 title: "Additions et soustractions",
 lesson:
 "Poser des additions et des soustractions avec retenues.",
-video: "[https://www.youtube-nocookie.com/embed/NybHckSEQBI](https://www.youtube-nocookie.com/embed/NybHckSEQBI)",
+video: "",
 objectives: [
 "Poser une addition",
 "Poser une soustraction",
@@ -56,7 +56,7 @@ answer: "105",
 title: "Multiplications et divisions",
 lesson:
 "Utiliser les tables et comprendre les divisions simples.",
-video: "[https://www.youtube-nocookie.com/embed/NybHckSEQBI](https://www.youtube-nocookie.com/embed/NybHckSEQBI)",
+video: "",
 objectives: [
 "Connaître les tables",
 "Multiplier",
@@ -82,7 +82,7 @@ answer: "81",
 title: "Fractions et décimaux",
 lesson:
 "Comprendre les fractions simples et les nombres décimaux.",
-video: "[https://www.youtube-nocookie.com/embed/p33K1B0VhWk](https://www.youtube-nocookie.com/embed/p33K1B0VhWk)",
+video: "",
 objectives: [
 "Lire une fraction",
 "Comparer des fractions",
@@ -108,7 +108,7 @@ answer: "1",
 title: "Géométrie et mesures",
 lesson:
 "Reconnaître les formes géométriques et utiliser les mesures.",
-video: "[https://www.youtube-nocookie.com/embed/dUqv7G7-4W8](https://www.youtube-nocookie.com/embed/dUqv7G7-4W8)",
+video: "",
 objectives: [
 "Reconnaître les formes",
 "Mesurer une longueur",
@@ -134,7 +134,7 @@ answer: "règle",
 title: "Tables de multiplication",
 lesson:
 "Apprendre et mémoriser les tables de multiplication.",
-video: "[https://www.youtube-nocookie.com/embed/NybHckSEQBI](https://www.youtube-nocookie.com/embed/NybHckSEQBI)",
+video: "",
 objectives: [
 "Réciter les tables",
 "Calcul mental",
@@ -160,7 +160,7 @@ answer: "45",
 title: "Problèmes mathématiques",
 lesson:
 "Résoudre des situations de la vie quotidienne avec les mathématiques.",
-video: "[https://www.youtube-nocookie.com/embed/8mcTsyV56Zw](https://www.youtube-nocookie.com/embed/8mcTsyV56Zw)",
+video: "",
 objectives: [
 "Lire un problème",
 "Choisir la bonne opération",
@@ -186,7 +186,7 @@ answer: "4",
 title: "Heures et durées",
 lesson:
 "Lire l’heure et calculer des durées simples.",
-video: "[https://www.youtube-nocookie.com/embed/dUqv7G7-4W8](https://www.youtube-nocookie.com/embed/dUqv7G7-4W8)",
+video: "",
 objectives: [
 "Lire une horloge",
 "Comprendre les minutes",
@@ -212,7 +212,7 @@ answer: "30",
 title: "Monnaie et achats",
 lesson:
 "Utiliser l’argent et rendre la monnaie.",
-video: "[https://www.youtube-nocookie.com/embed/8mcTsyV56Zw](https://www.youtube-nocookie.com/embed/8mcTsyV56Zw)",
+video: "",
 objectives: [
 "Reconnaître les pièces",
 "Calculer un prix",
@@ -238,7 +238,7 @@ answer: "20€",
 title: "Symétrie et formes",
 lesson:
 "Découvrir la symétrie et reconnaître les figures géométriques.",
-video: "[https://www.youtube-nocookie.com/embed/dUqv7G7-4W8](https://www.youtube-nocookie.com/embed/dUqv7G7-4W8)",
+video: "",
 objectives: [
 "Comprendre la symétrie",
 "Tracer une figure",
