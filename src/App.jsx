@@ -23,6 +23,17 @@ const subjects = [
   { name: "Français", icon: "🖊️", color: "from-rose-500 to-pink-500" },
 ];
 
+const fallbackVideos = {
+  "Nombres et calculs": "https://www.youtube.com/embed/H14bBuluwB8",
+  "Fractions et décimaux": "https://www.youtube.com/embed/m2rT4z_5d7Y",
+  "Géométrie et mesures": "https://www.youtube.com/embed/oe33zXG4lWU",
+  "Multiplications et divisions": "https://www.youtube.com/embed/QsX9wD8lQ8Y",
+  "Grammaire": "https://www.youtube.com/embed/0mL0w8n2M8k",
+  "Lecture compréhension": "https://www.youtube.com/embed/6x1WUnZVxjA",
+  "Conjugaison": "https://www.youtube.com/embed/WP0xk8gJ8fY",
+  "Orthographe": "https://www.youtube.com/embed/QB5k5lLq4mM"
+};
+
 const courseData = {
   Primaire: {
     Mathématiques: primaryMath,
@@ -92,7 +103,7 @@ function buildChoices(answer, question, index = 0) {
 function enrichChapter(chapter) {
   return {
     ...chapter,
-    video: chapter.video || "",
+    video: chapter.video || fallbackVideos[chapter.title] || "https://www.youtube.com/embed/H14bBuluwB8",
     method: chapter.method || [
       "Lire toute la consigne",
       "Repérer les informations utiles",
