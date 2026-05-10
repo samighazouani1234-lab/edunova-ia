@@ -21,6 +21,10 @@ const levels = ["Primaire", "Collège"];
 const subjects = [
   { name: "Mathématiques", icon: "🧮", color: "from-indigo-500 to-violet-500" },
   { name: "Français", icon: "🖊️", color: "from-rose-500 to-pink-500" },
+  { name: "Anglais", icon: "🇬🇧", color: "from-sky-500 to-cyan-500" },
+  { name: "Sciences", icon: "🔬", color: "from-emerald-500 to-teal-500" },
+  { name: "Histoire-Géo", icon: "🌍", color: "from-amber-500 to-orange-500" },
+  { name: "Culture générale", icon: "🧠", color: "from-fuchsia-500 to-purple-500" },
 ];
 
 const fallbackVideos = {
@@ -31,7 +35,14 @@ const fallbackVideos = {
   "Grammaire": "https://www.youtube-nocookie.com/embed/5yQio1bTf5E",
   "Lecture compréhension": "https://www.youtube-nocookie.com/embed/Zilvl7Gd51A",
   "Conjugaison": "https://www.youtube-nocookie.com/embed/5yQio1bTf5E",
-  "Orthographe": "https://www.youtube-nocookie.com/embed/0W0ZK8f8Mto"
+  "Orthographe": "https://www.youtube-nocookie.com/embed/0W0ZK8f8Mto",
+  "Vocabulaire anglais": "https://www.youtube-nocookie.com/embed/hq3yfQnllfQ",
+  "Les animaux": "https://www.youtube-nocookie.com/embed/q0ad1e0JSxE",
+  "Le système solaire": "https://www.youtube-nocookie.com/embed/libKVRa01L8",
+  "Les volcans": "https://www.youtube-nocookie.com/embed/4YlY9L9o0hQ",
+  "La Révolution française": "https://www.youtube-nocookie.com/embed/zY26WwzybM8",
+  "Les continents": "https://www.youtube-nocookie.com/embed/eTFE7xqSx8U",
+  "Culture générale": "https://www.youtube-nocookie.com/embed/WXuK6gekU1Y"
 };
 
 const courseData = {
