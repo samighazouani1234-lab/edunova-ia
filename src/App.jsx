@@ -6,6 +6,14 @@ import primaryMath from "./data/primaryMath";
 import collegeMath from "./data/collegeMath";
 import primaryFrench from "./data/primaryFrench";
 import collegeFrench from "./data/collegeFrench";
+import primaryEnglish from "./data/primaryEnglish";
+import collegeEnglish from "./data/collegeEnglish";
+import primaryScience from "./data/primaryScience";
+import collegeScience from "./data/collegeScience";
+import primaryHistory from "./data/primaryHistory";
+import collegeHistory from "./data/collegeHistory";
+import primaryCulture from "./data/primaryCulture";
+import collegeCulture from "./data/collegeCulture";
 
 const Button = ({ children, className = "", ...props }) => (
   <button
@@ -49,10 +57,18 @@ const courseData = {
   Primaire: {
     Mathématiques: primaryMath,
     Français: primaryFrench,
+    Anglais: primaryEnglish,
+    Sciences: primaryScience,
+    "Histoire-Géo": primaryHistory,
+    "Culture générale": primaryCulture,
   },
   Collège: {
     Mathématiques: collegeMath,
     Français: collegeFrench,
+    Anglais: collegeEnglish,
+    Sciences: collegeScience,
+    "Histoire-Géo": collegeHistory,
+    "Culture générale": collegeCulture,
   },
 };
 
