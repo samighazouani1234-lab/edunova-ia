@@ -386,7 +386,7 @@ function Header({ isLoggedIn, setShowLogin, logout, setPage }) {
           🎓
         </div>
         <div>
-          <p className="text-xl font-bold">ÉduNova IA</p>
+          <p className="text-xl font-bold">Novalya AI</p>
           <p className="text-xs text-white/60">Soutien scolaire intelligent</p>
         </div>
       </button>
@@ -821,7 +821,7 @@ function Security() {
 function Footer() {
   return (
     <footer className="max-w-7xl mx-auto px-6 py-10 text-white/45 text-sm flex flex-col md:flex-row gap-3 md:items-center md:justify-between">
-      <p>© 2026 ÉduNova IA.</p>
+      <p>© 2026 Novalya AI.</p>
       <p>Primaire · Collège · Toutes matières · Exercices plein écran</p>
     </footer>
   );
