@@ -32,7 +32,7 @@ const videoLibrary = {
   "Vocabulaire": "https://www.youtube.com/embed/BPebPZBYUYo",
 
   // Collège — Français
-  "Analyse de texte": "https://www.youtube.com/embed/CqTenJ0Ph5E",
+  "Analyse de texte": "https://www.youtube.com/embed/9VqPL7n5g9k",
   "Expression écrite": "https://www.youtube.com/embed/HmHVd3QVPi8",
   "Grammaire : classes et fonctions": "https://www.youtube.com/embed/IUxs-B3wTuI",
 
