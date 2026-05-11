@@ -61,7 +61,7 @@ const videoLibrary = {
   "Le système solaire avancé": "https://www.youtube.com/embed/I7cajVnzm8k",
 
   // Primaire — Histoire-Géo
-  "Les continents": "https://www.youtube.com/embed/1fV9d2bGQmY",
+  "Les continents": "https://www.youtube.com/embed/-z0eiikTsbw",
   "Lire une carte": "https://www.youtube.com/embed/kDjRugurkZY",
   "Se repérer dans le temps": "https://www.youtube.com/embed/UNaa4XYkia8",
 
